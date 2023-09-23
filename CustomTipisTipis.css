@@ -1,0 +1,31 @@
+/* Root */
+:root {
+    --pr-color : #F4841C;
+    --sc-color : #1C0F00;
+    --tr-color : #fafafa; 
+}
+
+body {
+    font-family: 'Poppins', noto-serif;
+    background-color: var(--tr-color);
+}
+
+/* Navbar */
+.navbar {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-primary{
+    font-weight: 600;
+    font-size: 18px;
+    width: 140px;
+    height: 46px;
+    background-color: var(--pr-color);
+    color: var(--tr-color);
+    border: none;
+}
+
+/* Hero Section */
+
+

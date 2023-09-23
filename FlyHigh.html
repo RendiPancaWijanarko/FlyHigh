@@ -4,109 +4,96 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FlyHigh Corp.</title>
-        <link rel="icon" type="image/png" href="logo.png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="Assets\logo.png">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!-- Custom CSS Tipis-tipis -->
+        <link rel="stylesheet" href="CustomTipisTipis.css">
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Panggil navbar dengan js -->
         <div id="navbar"></div>
-
         <div class="container mt-5 bg-image">
-        <section class="section gradient-banner">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-2 order-md-1  text-md-left">
-                        <h3 class="text-black mb-3"><span style="color: #F4841C;">FlyHigh Corp.</span></h3>
-                        <h1 class="text-black font-weight-bold mb-6"><span style="font-size: 55px;">Your UI Design
-                                <br>and Journal Solution</span></h1>
-                        <div class="navbar-text text-center">
-                            <a class="btn btn-primary rounded-pill" href="#"
-                                style="background-color: #F4841C; color: #FAFAFA;">View Portfolio!</a>
+            <section class="section gradient-banner pt-5 pb-2 mt-5 mb-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-2 order-md-1 text-md-left">
+                            <h3 class="text-black mb-3"><span style="color: #F4841C;">FlyHigh Corp.</span></h3>
+                            <h1 class="text-black font-weight-bold mb-6"><span style="font-size: 55px;">Your UI Design<br>and Journal Solution</span></h1>
+                            <div class="navbar-text text-center">
+                                <a class="btn rounded-pill" href="#"
+                                    style="background-color: #F4841C; color: #FAFAFA;">View Portfolio!</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center order-1 order-md-2">
+                            <img class="img-fluid" src="Assets/logo.png" alt="screenshot">
                         </div>
                     </div>
-                    <div class="col-md-6 text-center order-1 order-md-2">
-                        <img class="img-fluid" src="Assets/logo.png" alt="screenshot">
+                </div>
+            </section>
+        </div>
+        <section class="section pt-0 position-relative pull-top">
+            <div class="container">
+                <div class="rounded shadow p-5 bg-white">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                            <div class="d-flex align-items-center">
+                                <img src="Assets/Group email.png" alt="Gambar 1" style="max-width: 100px;">
+                                <div class="ml-3">
+                                    <h3 class="mt-4 text-capitalize h5">Email:</h3>
+                                    <p class="regular text-muted"><span style="color: #F4841C;">FlyHigh@gmail.com</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                            <div class="d-flex align-items-center">
+                                <img src="Assets/Group telepon.png" alt="Gambar 2" style="max-width: 100px;">
+                                <div class="ml-3">
+                                    <h3 class="mt-4 text-capitalize h5">Phone:</h3>
+                                    <p class="regular text-muted"><span style="color: #F4841C;">(234)-231-2123</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+                            <div class="d-flex align-items-center">
+                                <img src="Assets/Group instagram.png" alt="Gambar 3" style="max-width: 100px;">
+                                <div class="ml-3">
+                                    <h3 class="mt-4 text-capitalize h5">Social Media:</h3>
+                                    <p class="regular text-muted"><span style="color: #F4841C;">@FlyHigh.corp</span></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-
-        <section class="section pt-0 position-relative pull-top">
-        <div class="container">
-            <div class="rounded shadow p-5 bg-white">
+        <section class="feature section pt-5 pb-5 mt-5" style="background-color: #F4841C;">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-                        <div class="d-flex align-items-center">
-                            <img src="Assets/Group email.png" alt="Gambar 1" style="max-width: 100px;">
-                            <div class="ml-3">
-                                <h3 class="mt-4 text-capitalize h5">Email:</h3>
-                                <p class="regular text-muted"><span style="color: #F4841C;">FlyHigh@gmail.com</span></p>
-                            </div>
+                    <div class="col-lg-6 ml-auto align-self-center" data-aos="fade-right">
+                        <div class="image-content">
+                            <img class="img-fluid" src="Assets/Businessman working on laptop.png" alt="ManOnLaptop">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-                        <div class="d-flex align-items-center">
-                            <img src="Assets/Group telepon.png" alt="Gambar 2" style="max-width: 100px;">
-                            <div class="ml-3">
-                                <h3 class="mt-4 text-capitalize h5">Phone:</h3>
-                                <p class="regular text-muted"><span style="color: #F4841C;">(234)-231-2123</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
-                        <div class="d-flex align-items-center">
-                            <img src="Assets/Group instagram.png" alt="Gambar 3" style="max-width: 100px;">
-                            <div class="ml-3">
-                                <h3 class="mt-4 text-capitalize h5">Social Media:</h3>
-                                <p class="regular text-muted"><span style="color: #F4841C;">@FlyHigh.corp</span></p>
-                            </div>
+                    <div class="col-lg-6 mr-auto align-self-center">
+                        <div class="feature-content">
+                            <h2 style="font-size: 40px;">Do you need design services?</h2>
+                            <p class="desc" style="color: #FAFAFA;">We'll create them for you!</p>
+                            <p class="desc" style="color: #FAFAFA;">Kami memberikan hasil UI desain terbaik dan kualitas artikel skala internasional sesuai kebutuhan anda.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <section class="feature section pt-5 pb-5 mt-5" style="background-color: #F4841C;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ml-auto justify-content-center">
-                    <div class="image-content" data-aos="fade-right">
-                        <img class="img-fluid" src="Assets/Businessman working on laptop.png" alt="ManOnLaptop">
-                    </div>
-                </div>
-                <div class="col-lg-6 mr-auto align-self-center">
-                    <div class="feature-content">
-                        <h2><span style="font-size: 40px;">Do you need design services? <br>
-                                We'll create them for you!</span></h2>
-                        <p class="desc"><span style="color: #FAFAFA;">Kami memberikan hasil UI desain terbaik dan
-                                kualitas
-                                artikel skala internasional sesuai kebutuhan anda.</span></p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
+        </section>
+        <!-- Panggil footer.html dengan JS -->
         <div id="footer"></div>
 
-        <script>
-            // Memuat konten navbar
-            fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar').innerHTML = data;
-                });
-
-            // Memuat konten footer
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                });
-        </script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="PanggilNavFoot.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
