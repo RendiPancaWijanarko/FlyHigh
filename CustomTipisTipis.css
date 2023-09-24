@@ -10,8 +10,13 @@ body {
     background-color: var(--tr-color);
 }
 
+* {
+    z-index: 2;
+}
+
 /* Navbar */
 .navbar {
+    z-index: 3;
     font-weight: 700;
     font-size: 18px;
 }
@@ -26,6 +31,37 @@ body {
     border: none;
 }
 
-/* Hero Section */
+/* Portfolio_Hero Section */
+#hero {
+    height: 100vh;
+    width: 100%;
+}
 
+.img-hero {
+    height: 80%;
+}
 
+.hero-tagline {
+    margin-top: 220px;
+}
+
+.hero-tagline h1{
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.hero-tagline p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Portfolio_workflow section */
+.workflow-title {
+    font-size: 32px;
+    color: var(--pr-color);
+}
+
+.workflow-subtitle {
+    font-size: 25px;
+    line-height: 25px;
+}
