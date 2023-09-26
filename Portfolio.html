@@ -134,20 +134,16 @@
             </div>
         </section>
 
-        <!-- Form feedback/kerja sama -->
+        <!-- Section feedback/kerja sama -->
         <section id="form-feedback" style="background-color: #F0F0F0;">
             <div class="container" style="padding: 100px 0 40px 0;">
                 <div class="row">
-                    <div class="row sub-row">
-                        <div class="col-md-4 offset-1">
-                            <h1 class="fw-semibold" style="font-size: 32px; line-height: 45px;">Kerja Sama atau Saran?
-                                Feel Free to <span style="color: var(--pr-color);">Connect</span>!</h1>
-                            <p class="fw-regular opacity-50" style="font-size: 15px; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, eros at mattis volutpat, arcu justo tempus enim, eu blandit nulla eros eget orci.</p>
-                        </div>
-                    </div>
-
-                    <div class="row sub-row-2">
-                        <div class="col-md-1 offset-1 d-flex flex-column align-items-center">
+                    <!-- Kolom Sebelah Kiri -->
+                    <div class="col-md-4 offset-1">
+                        <h1 class="fw-semibold" style="font-size: 32px; line-height: 45px;">Kerja Sama atau Saran?
+                            Feel Free to <span style="color: var(--pr-color);">Connect</span>!</h1>
+                        <p class="fw-regular opacity-50" style="font-size: 15px; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, eros at mattis volutpat, arcu justo tempus enim, eu blandit nulla eros eget orci.</p>
+                        <div class="offset-1 icons">
                             <div class="mt-3">
                                 <img src="Assets/icon-wa.png" alt="" width="40px">
                             </div>
@@ -157,13 +153,12 @@
                             <div class="mt-3">
                                 <img src="Assets/icon-email.png" alt="" width="40px">
                             </div>
-                            <div class="mt-3 d-flex inline">
+                            <div class="mt-3 d-flex align-items-center">
                                 <img src="Assets/icon-location.png" alt="" width="40px">
                                 <span></span>
                             </div>
                         </div>
-
-                        <div class="col-md-6 d-flex flex-column align-items-start">
+                        <div class="keterangan-icons">
                             <div class="fw-regular opacity-50 mt-3" style="font-size: 15px; line-height: 20px;">
                                 +62 851 5891 1396
                             </div>
@@ -178,9 +173,42 @@
                             </div>
                         </div>
                     </div>
+        
+                    <!-- Form Card di Sebelah Kanan -->
+                    <div class="col-md-6 offset-1">
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nama">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="nama" name="nama" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telepon">Nomor Telepon</label>
+                                        <input type="tel" class="form-control" id="telepon" name="telepon" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subjek">Subjek</label>
+                                        <input type="text" class="form-control" id="subjek" name="subjek" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pesan">Pesan</label>
+                                        <textarea class="form-control" id="pesan" name="pesan" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>              
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        
+        
         
         
         <!-- Panggil footer.html dengan JS -->
