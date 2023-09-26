@@ -89,3 +89,17 @@ body {
 }
 
 /* Portfolio_whyus section */
+
+
+
+
+
+
+/* About Us */
+/* About Us section 3: values */
+.abus-values-circle {
+    width: 80px; 
+    height: 80px; 
+    background-color: var(--pr-color);
+    color: var(--tr-color);
+}
