@@ -136,7 +136,7 @@
 
         <!-- Section feedback/kerja sama -->
         <section id="form-feedback" style="background-color: #F0F0F0;">
-            <div class="container" style="padding: 100px 0 40px 0;">
+            <div class="container" style="padding: 110px 0 80px 0;">
                 <div class="row">
                     <!-- Kolom Sebelah Kiri -->
                     <div class="col-md-4 offset-1">
@@ -144,66 +144,62 @@
                             Feel Free to <span style="color: var(--pr-color);">Connect</span>!</h1>
                         <p class="fw-regular opacity-50" style="font-size: 15px; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, eros at mattis volutpat, arcu justo tempus enim, eu blandit nulla eros eget orci.</p>
                         <div class="offset-1 icons">
-                            <div class="mt-3">
+                            <div class="align-items-center d-flex mt-3">
                                 <img src="Assets/icon-wa.png" alt="" width="40px">
-                            </div>
-                            <div class="mt-3">
+                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
+                                    +62 851 5891 1396
+                                </div>
+                            </div>                            
+                            <div class="align-items-center d-flex mt-3">
                                 <img src="Assets/icon-github.png" alt="" width="40px">
+                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
+                                    github.com/RendiPancaWijanarko
+                                </div>
                             </div>
-                            <div class="mt-3">
+                            <div class="align-items-center d-flex mt-3">
                                 <img src="Assets/icon-email.png" alt="" width="40px">
+                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
+                                    rendi.wijanarko03@gmail.com
+                                </div>
                             </div>
-                            <div class="mt-3 d-flex align-items-center">
+                            <div class="align-items-center d-flex mt-3">
                                 <img src="Assets/icon-location.png" alt="" width="40px">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="keterangan-icons">
-                            <div class="fw-regular opacity-50 mt-3" style="font-size: 15px; line-height: 20px;">
-                                +62 851 5891 1396
-                            </div>
-                            <div class="fw-regular opacity-50 mt-3" style="font-size: 15px; line-height: 20px;">
-                                github.com/RendiPancaWijanarko
-                            </div>
-                            <div class="fw-regular opacity-50 mt-3" style="font-size: 15px; line-height: 20px;">
-                                rendi.wijanarko03@gmail.com
-                            </div>
-                            <div class="fw-regular opacity-50 mt-3" style="font-size: 15px; line-height: 20px;">
-                                Jl. Rungkut Madya No. 103, Surabaya, Jawa Timur
-                            </div>
+                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
+                                    Jl. Rungkut Madya No. 103, <br>Surabaya, Jawa Timur
+                                </div>
+                            </div>                                                                                    
                         </div>
                     </div>
         
                     <!-- Form Card di Sebelah Kanan -->
                     <div class="col-md-6 offset-1">
-                        <div class="card">
+                        <div class="card" style="border-radius: 40px; background-color: #E5E5E5; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);">
                             <div class="card-body">
                                 <form>
-                                    <div class="form-group">
-                                        <label for="nama">Nama Lengkap</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" required>
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control fw-medium" placeholder="Nama Lengkap*" id="nama" name="nama" required style="border-radius: 20px; background-color: #FAFAFA; height: 60px;">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="form-row justify-content-between mb-2 d-flex">
+                                        <div class="form-group col-7">
+                                            <input type="email" class="form-control fw-medium" placeholder="Email*" id="email" name="email" required style="border-radius: 20px; background-color: #FAFAFA; height: 60px;">
+                                        </div>
+                                        <div class="form-group col-5 ml-2">
+                                            <input type="tel" class="form-control fw-medium" placeholder="No.Telp*" id="telepon" name="telepon" required style="border-radius: 20px; background-color: #FAFAFA; height: 60px;">
+                                        </div>
+                                    </div>                     
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control fw-medium" placeholder="Subjek*" id="subjek" name="subjek" required style="border-radius: 20px; background-color: #FAFAFA; height: 60px;">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="telepon">Nomor Telepon</label>
-                                        <input type="tel" class="form-control" id="telepon" name="telepon" required>
+                                    <div class="form-group mb-2">
+                                        <textarea class="form-control fw-medium" placeholder="Pesan*" id="pesan" name="pesan" rows="7" required style="border-radius: 20px; background-color: #FAFAFA;"></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="subjek">Subjek</label>
-                                        <input type="text" class="form-control" id="subjek" name="subjek" required>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary" style="width: 160px; height: 45px; border-radius: 100px;">Kirim Pesan</button>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="pesan">Pesan</label>
-                                        <textarea class="form-control" id="pesan" name="pesan" rows="4" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>              
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div>                                                   
                 </div>
             </div>
         </section>
