@@ -5,6 +5,29 @@
     --tr-color : #fafafa; 
 }
 
+/* text dan bg palet */
+.text-primary {
+    color: var(--pr-color) !important;
+}
+.bg-primary {
+    background-color: var(--pr-color) !important;
+}
+
+.text-secondary {
+    color: var(--sc-color) !important;
+}
+.bg-secondary {
+    background-color: var(--sc-color) !important;
+}
+
+.text-tertiary {
+    color: var(--tr-color);
+}
+.bg-tertiary {
+    background-color: var(--tr-color);
+}
+
+/* body univ */
 body {
     font-family: 'Poppins', noto-serif;
     background-color: var(--tr-color);
