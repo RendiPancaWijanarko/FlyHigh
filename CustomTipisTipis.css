@@ -41,6 +41,19 @@ body {
     border: none;
 }
 
+/* Footer */
+footer {
+    background-color: #3F3E3C;
+}
+
+footer h5 span {
+    color: #FF9939;
+}
+
+footer h6 {
+    color: #FF9939;
+}
+
 /* Portfolio_Hero Section */
 #hero {
     height: 100vh;
