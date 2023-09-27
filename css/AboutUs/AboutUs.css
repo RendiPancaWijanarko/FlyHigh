@@ -1,0 +1,25 @@
+#abus-header {
+  padding-top: 250px;
+  padding-bottom: 150px;
+}
+
+.values-size {
+  width: 80px;
+  height: 80px;
+}
+
+.desktablet-size {
+  width: 100%;
+  height: 500px;
+}
+
+.mobile-size {
+  width: 100%;
+  height: 300px;
+}
+
+#abus-team div[class*=card-header] {
+  background-color: #FBECDE;
+}
+
+/*# sourceMappingURL=AboutUs.css.map */

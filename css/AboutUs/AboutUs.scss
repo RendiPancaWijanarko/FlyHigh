@@ -1,0 +1,23 @@
+// about us section 1: header
+#abus-header {
+    padding-top: 250px; padding-bottom: 150px;
+}
+
+// about us section 3: values
+.values-size {
+    width: 80px; height: 80px;
+}
+
+// about us section 4 & 5: vision mission
+.desktablet-size {
+    width: 100%; height: 500px;
+}
+
+.mobile-size {
+    width: 100%; height: 300px;
+}
+
+// about us section 6: team
+#abus-team div[class*="card-header"] {
+    background-color: #FBECDE;
+}
