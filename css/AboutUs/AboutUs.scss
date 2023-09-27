@@ -1,3 +1,33 @@
+// ini nanti ditaro di file scss utama
+$pr-color: #F4841C;
+$sc-color: #1C0F00;
+$tr-color: #fafafa;
+
+$btn-secondary-hover: lighten($sc-color, 20%);
+$btn-secondary-active: lighten($btn-secondary-hover, 10%);
+
+.btn-secondary {
+    background-color: $sc-color !important;
+    color: $tr-color !important;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-secondary:hover {
+    background-color: $btn-secondary-hover !important;
+}
+
+.btn-secondary:active {
+    background-color: $btn-secondary-active !important;
+}
+
+// ini ditaro di sini biar bisa atur ukuran tombol sendiri
+.btn-secondary {
+    height: 60px;
+    width: 200px;
+}
+
 // about us section 1: header
 #abus-header {
     padding-top: 250px; padding-bottom: 150px;

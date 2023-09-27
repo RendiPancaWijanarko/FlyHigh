@@ -1,3 +1,24 @@
+.btn-secondary {
+  background-color: #1C0F00 !important;
+  color: #fafafa !important;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn-secondary:hover {
+  background-color: #824600 !important;
+}
+
+.btn-secondary:active {
+  background-color: #b56100 !important;
+}
+
+.btn-secondary {
+  height: 60px;
+  width: 200px;
+}
+
 #abus-header {
   padding-top: 250px;
   padding-bottom: 150px;
