@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <!-- Custom CSS Tipis-tipis -->
         <link rel="stylesheet" href="CustomTipisTipis.css">
+        <!-- Custom Responsive Tipis aja -->
+        <link rel="stylesheet" href="custom-responsive.css">
         <!-- Font Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,38 +22,40 @@
         <div id="navbar"></div>
         
         <!-- Section Sapa User di Porto -->
-        <section id="hero">
-            <div class="container h-100">
+        <section id="hero" class="vh-100">
+            <div class="container h-100 d-flex align-items-lg-center">
                 <div class="row">
-                    <div class="col-md-6 offset-1 hero-tagline">
-                        <h3 class="fw-medium d-flex align-items-center">
+                    <div class="col-12 offset-lg-2 posisi-text-md posisi-text-sm">
+                        <h3 class="fw-medium d-flex align-items-center d-none d-md-block d-sm-none">
                             <img src="Assets\Line_Orange.svg" class="img-fluid" width="70" style="margin-right: 10px;">
                             <span>UX & Journal</span>
                         </h3>
-                        <h1 class="fw-bold">Solusi User-Interface <br> dan Journal Anda!</h1>
-                        <p class="opacity-50">Kami memberikan hasil UI desain terbaik dan kualitas<br>
+                        <h1 class="fw-bold display-5">Solusi User-Interface <br> dan Journal Anda!</h1>
+                        <p class="opacity-50 para-sm">Kami memberikan hasil UI desain terbaik dan kualitas<br>
                             artikel skala internasional sesuai kebutuhan anda.</p>
-                        <a class="btn btn-primary fw-medium align-items-center" style="width: auto; text-align: center; display: flex; justify-content: center; align-items: center; max-width: 200px;" href="https://wa.me/+6285158911396/?text=Halo%2C%20apakah%20bisa%20mengatur%20jadwal%20untuk%20kerja%20sama%3F%20Saya%20tertarik%20dengan%20FlyHigh%20Corp.%20%21" target="blank">
-                        Let's Collaborate
-                        </a>
+                            <a class="btn btn-primary fw-medium d-flex align-items-center text-center justify-content-center w-auto center-button" style="max-width: 200px;" href="https://wa.me/+6285158911396/?text=Halo%2C%20apakah%20bisa%20mengatur%20jadwal%20untuk%20kerja%20sama%3F%20Saya%20tertarik%20dengan%20FlyHigh%20Corp.%20%21" target="blank">
+                                Let's Collaborate
+                              </a>
+                              
                     </div>
                 </div>
-                <img src="Assets/Portfolio_Hero.png" alt="hero_section" class="position-absolute end-0 bottom-0 img-hero">
+                <img src="Assets/Portfolio_Hero.png" alt="hero_section" class="position-absolute end-0 bottom-0 d-none d-lg-block" height="80%">
+                <img src="Assets/Portfolio_Hero.png" alt="hero_section" class="position-absolute end-0 bottom-0 d-none d-md-block d-lg-none mx-md-auto" height="60%">
             </div>
         </section>
 
         <!-- Section Alur Kerja -->
         <section id="work-flow" class="pt-5 pb-5" style="background-color: #FBECDE;">
-            <div class="container">
+            <div class="container align-items-center">
                 <div class="row">
-                    <div class="col-12 text-center"> 
+                    <div class="col-12 text-center">
                         <h3 class="fw-bold workflow-title">WORK FLOW</h3>
-                        <h4 class="fw-semibold mt-2 workflow-subtitle">A Clear Process Define The Result</h4>   
+                        <h4 class="fw-semibold mt-2 workflow-subtitle">A Clear Process Define The Result</h4>
                     </div>
                 </div>
-
-                <div class="row pt-5 mt-4 d-flex align-items-center">
-                    <div class="col-md-2 offset-1">
+        
+                <div class="row pt-5 mt-4 align-items-center">
+                    <div class="col-lg-2 offset-lg-1 order-lg-1 col-md-4 order-md-1 col-sm-12 order-sm-1 mb-4 order-lg-1">
                         <div class="business-planning text-center">
                             <div class="icon-bp">
                                 <img src="Assets\business-planning.png" alt="" width="100">
@@ -60,14 +64,14 @@
                             <p class="fw-medium opacity-50 wf-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod erat.</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 d-none d-lg-block col-sm-12 text-center mb-4 order-lg-2">
                         <div class="business-planning text-center">
                             <div class="icon-bp">
                                 <img src="Assets/panah-1.png" alt="" width="90">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-4 col-sm-12 order-lg-2 order-md-2 order-sm-3 mb-4 order-lg-3">
                         <div class="business-planning text-center">
                             <div class="icon-bp">
                                 <img src="Assets/project-execution.png" alt="" width="100">
@@ -76,14 +80,14 @@
                             <p class="fw-medium opacity-50 wf-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod erat.</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 d-none d-lg-block col-sm-12 text-center mb-4 order-lg-4">
                         <div class="business-planning text-center">
                             <div class="icon-bp">
-                                <img src="Assets/panah-1.png" alt="" width="90">
+                                <img src="Assets/panah-2.png" alt="" width="90">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 offset-lg-0 order-lg-3 col-md-4 order-md-3 col-sm-12 order-sm-2 mb-4 order-lg-5">
                         <div class="business-planning text-center">
                             <div class="icon-bp">
                                 <img src="Assets/grow-your-business.png" alt="" width="100">
@@ -95,84 +99,105 @@
                 </div>
             </div>
         </section>
+        
 
         <!-- Section Kenapa Harus FlyHigh -->
-        <section id="why-us" Style="background-color: var(--tr-color); height: 70vh; width: 100%;">
-            <div class="container-fluid position-relative">
-                <div class="row">
-                    <div class="col-md-6 offset-6" style="margin-top: 100px; padding-top: 25px;">
-                        <h3 class="fw-bold" style="font-size: 50px; line-height: 70px;">Kenapa harus <span style="color: var(--pr-color)">FlyHigh</span>?</h3>
-                        <p class="fw-medium opacity-50" style="font-size: 20px; line-height: 30px;">Kami memberikan hasil UI desain terbaik dan kualitas<br>
-                            artikel skala internasional sesuai kebutuhan anda. Sudah<br>
-                            banyak client yang puas dengan hasil project kami!</p>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <img src="Assets/photo.png" alt="Client Photo" width="145">
-                            </div>
-                            <div class="pt-3">
-                                <h1 class="fw-medium" style="font-size: 32px;line-height: 10px;">450+</h1>
-                                <p class="fw-regular opacity-50" style="font-size: 18px;">Satisfied Clients</p>
-                            </div>
-                            <div class="pt-2 ">
-                                <p style="font-size: 25px;">|</p>
-                            </div>
-                            <div class="pt-3">
-                                <h1 class="fw-medium" style="font-size: 32px;line-height: 10px;">500+</h1>
-                                <p class="fw-regular opacity-50" style="font-size: 18px;">Projects</p>
-                            </div>
-                            <div class="pt-2">
-                                <p style="font-size: 25px;">|</p>
-                            </div>
-                            <div class="pt-3">
-                                <h1 class="fw-medium" style="font-size: 32px;line-height: 10px;">30+</h1>
-                                <p class="fw-regular opacity-50" style="font-size: 18px;">Companies</p>
+        <section id="why-us" style="background-color: var(--tr-color);">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <img src="Assets/whyus.png" alt="whyus-section" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 d-none d-md-block d-lg-none">
+                        <img src="Assets/whyus.png" alt="whyus-section" class="img-fluid" style="width: auto; height: 350px;">
+                    </div>
+                    <div class="col-lg-7 col-md-7 posisi-text-sm">
+                        <div class="d-flex flex-column justify-content-md-start align-items-md-start h-100">
+                            <h1 class="fw-bold">Kenapa harus <span style="color: var(--pr-color)">FlyHigh</span>?</h1>
+                            <p class="lead fw-medium opacity-50">Kami memberikan hasil UI desain terbaik dan kualitas<br>
+                                artikel skala internasional sesuai kebutuhan anda. Sudah<br>
+                                banyak client yang puas dengan hasil project kami!</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="Assets/photo.png" alt="Client Photo" class="img-fluid" width="145">
+                                </div>
+                                <div class="mx-lg-4">
+                                    <h3 class="fw-medium">450+</h3>
+                                    <p class="fw-regular opacity-50">Satisfied Clients</p>
+                                </div>
+                                <div>
+                                    <p class="lead">|</p>
+                                </div>
+                                <div class="mx-lg-4">
+                                    <h3 class="fw-medium">500+</h3>
+                                    <p class="fw-regular opacity-50">Projects</p>
+                                </div>
+                                <div>
+                                    <p class="lead">|</p>
+                                </div>
+                                <div class="mx-lg-4">
+                                    <h3 class="fw-medium">30+</h3>
+                                    <p class="fw-regular opacity-50">Companies</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="Assets/why-us.png" alt="" class="position-absolute start-0 top-0">
             </div>
         </section>
-
+        
+        
+        
         <!-- Section feedback/kerja sama -->
         <section id="form-feedback" style="background-color: #F0F0F0;">
             <div class="container" style="padding: 110px 0 80px 0;">
                 <div class="row">
                     <!-- Kolom Sebelah Kiri -->
-                    <div class="col-md-4 offset-1">
-                        <h1 class="fw-semibold" style="font-size: 32px; line-height: 45px;">Kerja Sama atau Saran?
+                    <div class="col-lg-4 col-md-4 offset-lg-1 posisi-text-sm">
+                        <h1 class="fw-semibold">Kerja Sama atau Saran?
                             Feel Free to <span style="color: var(--pr-color);">Connect</span>!</h1>
-                        <p class="fw-regular opacity-50" style="font-size: 15px; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, eros at mattis volutpat, arcu justo tempus enim, eu blandit nulla eros eget orci.</p>
-                        <div class="offset-1 icons">
-                            <div class="align-items-center d-flex mt-3">
-                                <img src="Assets/icon-wa.png" alt="" width="40px">
-                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
-                                    +62 851 5891 1396
-                                </div>
+                        <p class="fw-regular opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, eros at mattis volutpat, arcu justo tempus enim, eu blandit nulla eros eget orci.</p>
+                        <div class="offset-lg-1 icons">
+                            <!-- Pada breakpoint SM, hanya menampilkan ikon tanpa teks -->
+                            <div class="d-sm-block d-md-none d-lg-none mt-2 mb-5">
+                                <img src="Assets/icon-wa.png" alt="" width="55px" class="mx-2">
+                                <img src="Assets/icon-github.png" alt="" width="55px" class="mx-2">
+                                <img src="Assets/icon-email.png" alt="" width="55px" class="mx-2">
+                                <img src="Assets/icon-location.png" alt="" width="55px" class="mx-2">
                             </div>                            
-                            <div class="align-items-center d-flex mt-3">
-                                <img src="Assets/icon-github.png" alt="" width="40px">
-                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
-                                    github.com/RendiPancaWijanarko
+                        
+                            <!-- Pada breakpoint MD dan LG, menampilkan ikon dengan teks -->
+                            <div class="d-none d-md-block d-lg-block mt-3">
+                                <div class="align-items-center d-flex">
+                                    <img src="Assets/icon-wa.png" alt="" width="40px">
+                                    <div class="fw-regular opacity-50" style="margin-left: 20px;">
+                                        +62 851 5891 1396
+                                    </div>
+                                </div>                            
+                                <div class="align-items-center d-flex mt-3">
+                                    <img src="Assets/icon-github.png" alt="" width="40px">
+                                    <div class="fw-regular opacity-50" style="margin-left: 20px;">
+                                        github.com/RendiPancaWijanarko
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="align-items-center d-flex mt-3">
-                                <img src="Assets/icon-email.png" alt="" width="40px">
-                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
-                                    rendi.wijanarko03@gmail.com
+                                <div class="align-items-center d-flex mt-3">
+                                    <img src="Assets/icon-email.png" alt="" width="40px">
+                                    <div class="fw-regular opacity-50" style="margin-left: 20px;">
+                                        rendi.wijanarko03@gmail.com
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="align-items-center d-flex mt-3">
-                                <img src="Assets/icon-location.png" alt="" width="40px">
-                                <div class="fw-regular opacity-50" style="margin-left: 20px; font-size: 15px; line-height: 20px;">
-                                    Jl. Rungkut Madya No. 103, <br>Surabaya, Jawa Timur
+                                <div class="align-items-center d-flex mt-3">
+                                    <img src="Assets/icon-location.png" alt="" width="40px">
+                                    <div class="fw-regular opacity-50" style="margin-left: 20px;">
+                                        Jl. Rungkut Madya No. 103, <br>Surabaya, Jawa Timur
+                                    </div>
                                 </div>
                             </div>                                                                                    
-                        </div>
+                        </div>                        
                     </div>
         
                     <!-- Form Card di Sebelah Kanan -->
-                    <div class="col-md-6 offset-1">
+                    <div class="col-lg-6 col-md-6 offset-lg-1 offset-md-2">
                         <div class="card" style="border-radius: 40px; background-color: #E5E5E5; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);">
                             <div class="card-body">
                                 <form id="pesanForm">

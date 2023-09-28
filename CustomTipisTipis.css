@@ -77,30 +77,6 @@ footer h6 {
     color: #FF9939;
 }
 
-/* Portfolio_Hero Section */
-#hero {
-    height: 100vh;
-    width: 100%;
-}
-
-.img-hero {
-    height: 80%;
-}
-
-.hero-tagline {
-    margin-top: 220px;
-}
-
-.hero-tagline h1{
-    font-size: 50px;
-    line-height: 65px;
-}
-
-.hero-tagline p {
-    font-size: 18px;
-    line-height: 30px;
-}
-
 /* Portfolio_workflow section */
 .workflow-title {
     font-size: 32px;
@@ -123,8 +99,6 @@ footer h6 {
     line-height: 20px;
     letter-spacing: 2%;
 }
-
-/* Portfolio_whyus section */
 
 
 
