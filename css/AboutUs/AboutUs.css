@@ -22,43 +22,47 @@
   background-color: #fafafa;
 }
 
-.btn-primary {
+.btn-primary:not(.navbar .btn-primary) {
   background-color: #F4841C !important;
   color: #fafafa !important;
+  height: 60px !important;
+  width: 200px !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  border: none !important;
+  border-radius: 5px !important;
 }
 
-.btn-primary:hover {
-  background-color: #f9b97d !important;
+.btn-primary:not(.navbar .btn-primary):hover {
+  background-color: #f69e4d !important;
 }
 
-.btn-primary:active {
-  background-color: #fbd3ae !important;
+.btn-primary:not(.navbar .btn-primary):active {
+  background-color: #f8ac65 !important;
 }
 
 .btn-secondary {
   background-color: #1C0F00 !important;
   color: #fafafa !important;
-}
-
-.btn-secondary:hover {
-  background-color: #824600 !important;
-}
-
-.btn-secondary:active {
-  background-color: #b56100 !important;
-}
-
-#abus-header .btn-primary, #abus-vision .btn-primary, #abus-mission .btn-primary, #abus-cta .btn-secondary {
   height: 60px !important;
   width: 200px !important;
   font-weight: 600 !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   border: none !important;
+  border-radius: 5px !important;
+}
+
+.btn-secondary:hover {
+  background-color: #4f2a00 !important;
+}
+
+.btn-secondary:active {
+  background-color: #693800 !important;
 }
 
 #abus-header {
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 250px;
+  padding-bottom: 150px;
 }
 
 .values-size {

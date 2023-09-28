@@ -27,20 +27,26 @@ $tr-color: #fafafa;
 
 // BUTTON
 // variabel
-$btn-primary-hover: lighten($pr-color, 20%);
-$btn-primary-active: lighten($btn-primary-hover, 10%);
-$btn-secondary-hover: lighten($sc-color, 20%);
-$btn-secondary-active: lighten($btn-secondary-hover, 10%);
+$btn-primary-hover: lighten($pr-color, 10%);
+$btn-primary-active: lighten($btn-primary-hover, 5%);
+$btn-secondary-hover: lighten($sc-color, 10%);
+$btn-secondary-active: lighten($btn-secondary-hover, 5%);
 
 // primary
-.btn-primary {
+.btn-primary:not(.navbar .btn-primary) {
     background-color: $pr-color !important;
     color: $tr-color !important;
+    height: 60px !important;
+    width: 200px !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
 }
-.btn-primary:hover {
+.btn-primary:not(.navbar .btn-primary):hover {
     background-color: $btn-primary-hover !important;
 }
-.btn-primary:active {
+.btn-primary:not(.navbar .btn-primary):active {
     background-color: $btn-primary-active !important;
 }
 
@@ -48,6 +54,12 @@ $btn-secondary-active: lighten($btn-secondary-hover, 10%);
 .btn-secondary {
     background-color: $sc-color !important;
     color: $tr-color !important;
+    height: 60px !important;
+    width: 200px !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
 }
 .btn-secondary:hover {
     background-color: $btn-secondary-hover !important;
@@ -56,20 +68,11 @@ $btn-secondary-active: lighten($btn-secondary-hover, 10%);
     background-color: $btn-secondary-active !important;
 }
 
-// customize button
-#abus-header .btn-primary, #abus-vision .btn-primary, #abus-mission .btn-primary, #abus-cta .btn-secondary {
-    height: 60px !important;
-    width: 200px !important;
-    font-weight: 600 !important;
-    font-size: 18px !important;
-    border: none !important;
-}
-
 
 // ABOUT US
 // about us section 1: header
 #abus-header {
-    padding-top: 200px; padding-bottom: 100px;
+    padding-top: 250px; padding-bottom: 150px;
 }
 
 // about us section 3: values
