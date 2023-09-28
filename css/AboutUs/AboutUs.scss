@@ -1,33 +1,72 @@
-// ini nanti ditaro di file scss utama
+// COLOR
 $pr-color: #F4841C;
 $sc-color: #1C0F00;
 $tr-color: #fafafa;
 
+// TEXT & BG
+.text-primary {
+    color: $pr-color !important;
+}
+.bg-primary {
+    background-color: $pr-color !important;
+}
+
+.text-secondary {
+    color: $sc-color !important;
+}
+.bg-secondary {
+    background-color: $sc-color !important;
+}
+
+.text-tertiary {
+    color: $tr-color;
+}
+.bg-tertiary {
+    background-color: $tr-color;
+}
+
+// BUTTON
+// variabel
+$btn-primary-hover: lighten($pr-color, 20%);
+$btn-primary-active: lighten($btn-primary-hover, 10%);
 $btn-secondary-hover: lighten($sc-color, 20%);
 $btn-secondary-active: lighten($btn-secondary-hover, 10%);
 
+// primary
+.btn-primary {
+    background-color: $pr-color !important;
+    color: $tr-color !important;
+}
+.btn-primary:hover {
+    background-color: $btn-primary-hover !important;
+}
+.btn-primary:active {
+    background-color: $btn-primary-active !important;
+}
+
+// secondary
 .btn-secondary {
     background-color: $sc-color !important;
     color: $tr-color !important;
-    border: none;
-    font-weight: 600;
-    font-size: 18px;
 }
-
 .btn-secondary:hover {
     background-color: $btn-secondary-hover !important;
 }
-
 .btn-secondary:active {
     background-color: $btn-secondary-active !important;
 }
 
-// ini ditaro di sini biar bisa atur ukuran tombol sendiri
-.btn-secondary {
-    height: 60px;
-    width: 200px;
+// customize button
+#abus-header .btn-primary, #abus-vision .btn-primary, #abus-mission .btn-primary, #abus-cta .btn-secondary {
+    height: 60px !important;
+    width: 200px !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    border: none !important;
 }
 
+
+// ABOUT US
 // about us section 1: header
 #abus-header {
     padding-top: 200px; padding-bottom: 100px;
@@ -42,7 +81,6 @@ $btn-secondary-active: lighten($btn-secondary-hover, 10%);
 .desktablet-size {
     width: 100%; height: 500px;
 }
-
 .mobile-size {
     width: 100%; height: 300px;
 }

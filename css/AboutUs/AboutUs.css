@@ -1,9 +1,43 @@
+.text-primary {
+  color: #F4841C !important;
+}
+
+.bg-primary {
+  background-color: #F4841C !important;
+}
+
+.text-secondary {
+  color: #1C0F00 !important;
+}
+
+.bg-secondary {
+  background-color: #1C0F00 !important;
+}
+
+.text-tertiary {
+  color: #fafafa;
+}
+
+.bg-tertiary {
+  background-color: #fafafa;
+}
+
+.btn-primary {
+  background-color: #F4841C !important;
+  color: #fafafa !important;
+}
+
+.btn-primary:hover {
+  background-color: #f9b97d !important;
+}
+
+.btn-primary:active {
+  background-color: #fbd3ae !important;
+}
+
 .btn-secondary {
   background-color: #1C0F00 !important;
   color: #fafafa !important;
-  border: none;
-  font-weight: 600;
-  font-size: 18px;
 }
 
 .btn-secondary:hover {
@@ -14,9 +48,12 @@
   background-color: #b56100 !important;
 }
 
-.btn-secondary {
-  height: 60px;
-  width: 200px;
+#abus-header .btn-primary, #abus-vision .btn-primary, #abus-mission .btn-primary, #abus-cta .btn-secondary {
+  height: 60px !important;
+  width: 200px !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  border: none !important;
 }
 
 #abus-header {
