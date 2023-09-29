@@ -26,13 +26,10 @@ $tr-color: #fafafa;
 }
 
 // BUTTON
-// variabel
+// primary
 $btn-pr-hover: lighten($pr-color, 10%);
 $btn-pr-active: lighten($btn-pr-hover, 5%);
-$btn-sc-hover: lighten($sc-color, 10%);
-$btn-sc-active: lighten($btn-sc-hover, 5%);
 
-// primary
 .btn-primary:not(.navbar .btn-primary) {
     background-color: $pr-color !important;
     color: $tr-color !important;
@@ -51,6 +48,9 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 }
 
 // secondary
+$btn-sc-hover: lighten($sc-color, 10%);
+$btn-sc-active: lighten($btn-sc-hover, 5%);
+
 .btn-secondary {
     background-color: $sc-color !important;
     color: $tr-color !important;
@@ -102,4 +102,21 @@ section:not(#abus-header, #abus-img) {
 // about us section 6: team
 #abus-team div[class*="card-header"] {
     background-color: #FBECDE;
+}
+
+// about us section 7: cta
+#abus-cta .dropdown-item {
+    color: $tr-color !important;
+}
+
+#abus-cta .dropdown-item:hover {
+    background-color: $pr-color !important;
+}
+
+#abus-cta .dropdown-item:active {
+    background-color: lighten($pr-color, 5%) !important;
+}
+
+#abus-cta .dropdown-menu-dark {
+    background-color: $sc-color !important;
 }

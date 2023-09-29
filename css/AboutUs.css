@@ -87,4 +87,20 @@ section:not(#abus-header, #abus-img) {
   background-color: #FBECDE;
 }
 
+#abus-cta .dropdown-item {
+  color: #fafafa !important;
+}
+
+#abus-cta .dropdown-item:hover {
+  background-color: #F4841C !important;
+}
+
+#abus-cta .dropdown-item:active {
+  background-color: #f59134 !important;
+}
+
+#abus-cta .dropdown-menu-dark {
+  background-color: #1C0F00 !important;
+}
+
 /*# sourceMappingURL=AboutUs.css.map */

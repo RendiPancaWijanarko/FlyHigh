@@ -214,34 +214,35 @@
         <!-- section 7 -->
         <section id="abus-cta" class="bg-primary">
             <div class="container text-center">
-                <h1 class="mb-3 fw-bold">Apa yang sedang Anda butuhkan saat ini?</h1>
-                <h2 class="mb-3 fw-bold text-tertiary">Kami akan buatkan untuk Anda!</h2>
-                <!-- hanya muncul di desktop -->
-                <i class="d-md-inline d-none fa-solid fa-face-grin-wink text-tertiary fa-6x"></i>
-
+                <h1 class="mb-3 fw-bold">Sedang butuh desain UI/UX atau artikel jurnal?</h1>
+                <h2 class="mb-md-3 fw-bold text-tertiary">Kami akan buatkan untukmu!</h2>
+                
+                <!-- tampilan desktop dan tablet -->
                 <div class="row text-tertiary">
+                    <i class="d-md-block d-none fa-solid fa-face-grin-wink fa-6x"></i>
                     <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
-                        <!-- hanya muncul di mobile -->
-                        <h5 class="d-md-none d-block mb-4 fw-semibold">Butuh bantuan pembuatan desain UI/UX?</h5>
-                        <!-- ikon untuk desktop dan tablet -->
                         <i class="d-md-block d-none fa-solid fa-hand-pointer fa-rotate-180 fa-3x mb-4"></i>
-                        <!-- ikon untuk mobile -->
-                        <i class="d-md-none d-block fa-solid fa-arrow-down fa-2x mb-4"></i>                       
-                        <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn btn-secondary d-flex align-items-center justify-content-center">Desain UI/UX</a>
+                        <div class="d-md-flex d-none align-items-center justify-content-center">
+                            <a class="btn btn-secondary d-flex align-items-center justify-content-center">UI/UX Design</a>
                         </div>
                     </div> 
                     <div class="col-lg-4 inset-lg-2 col-md-5 inset-md-1 mt-md-0 mt-4">
-                        <!-- hanya muncul di mobile -->
-                        <h5 class="d-md-none d-block mb-4 fw-semibold">Butuh bantuan pembuatan artikel jurnal?</h5>
-                        <!-- ikon untuk desktop dan tablet -->
                         <i class="d-md-block d-none fa-solid fa-hand-pointer fa-flip-vertical fa-3x mb-4"></i>
-                        <!-- ikon untuk mobile -->
-                        <i class="d-md-none d-block fa-solid fa-arrow-down fa-2x mb-4"></i>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn btn-secondary d-flex align-items-center justify-content-center">Artikel Jurnal</a>
+                        <div class="d-md-flex d-none align-items-center justify-content-center">
+                            <a class="btn btn-secondary d-flex align-items-center justify-content-center">Journal Article</a>
                         </div>
-                    </div> 
+                    </div>
+                </div>
+
+                <!-- tampilan mobile -->
+                <div class="dropdown d-md-none d-block">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pilih layanan
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="btn-dropdown">
+                        <li><a class="dropdown-item" href="">UI/UX Design</a></li>
+                        <li><a class="dropdown-item" href="">Journal Article</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
