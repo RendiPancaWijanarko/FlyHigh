@@ -70,8 +70,8 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 
 // ABOUT US
 // fungsi untuk mengatur padding top dan bottom section
-@function setSectionPadding($isFirstSection) {
-    @if ($isFirstSection) {
+@function setSectionPadding($is-first-section) {
+    @if ($is-first-section) {
         @return 250px 0 150px 0;
     } @else {
         @return 50px 0 50px 0;
@@ -82,7 +82,7 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 #abus-header {
     padding: setSectionPadding(true);
 }
-section:not(#abus-header, #abus-img, footer section) {
+section:not(#abus-header, #abus-img) {
     padding: setSectionPadding(false);
 }
 

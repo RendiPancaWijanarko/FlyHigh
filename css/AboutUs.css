@@ -64,7 +64,7 @@
   padding: 250px 0 150px 0;
 }
 
-section:not(#abus-header, #abus-img, footer section) {
+section:not(#abus-header, #abus-img) {
   padding: 50px 0 50px 0;
 }
 
