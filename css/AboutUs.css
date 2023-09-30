@@ -28,7 +28,7 @@
   height: 60px !important;
   width: 200px !important;
   font-weight: 600 !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   border: none !important;
   border-radius: 5px !important;
 }
@@ -47,7 +47,7 @@
   height: 60px !important;
   width: 200px !important;
   font-weight: 600 !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   border: none !important;
   border-radius: 5px !important;
 }
@@ -64,7 +64,11 @@
   padding: 250px 0 150px 0;
 }
 
-section:not(#abus-header, #abus-img) {
+#abus-cta {
+  padding: 100px 0 100px 0;
+}
+
+section:not(#abus-header, #abus-cta, #abus-img) {
   padding: 50px 0 50px 0;
 }
 
@@ -101,6 +105,10 @@ section:not(#abus-header, #abus-img) {
 
 #abus-cta .dropdown-menu-dark {
   background-color: #1C0F00 !important;
+}
+
+#abus-cta .btn-secondary {
+  border-radius: 50px !important;
 }
 
 /*# sourceMappingURL=AboutUs.css.map */

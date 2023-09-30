@@ -36,7 +36,7 @@ $btn-pr-active: lighten($btn-pr-hover, 5%);
     height: 60px !important;
     width: 200px !important;
     font-weight: 600 !important;
-    font-size: 20px !important;
+    font-size: 18px !important;
     border: none !important;
     border-radius: 5px !important;
 }
@@ -57,7 +57,7 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
     height: 60px !important;
     width: 200px !important;
     font-weight: 600 !important;
-    font-size: 20px !important;
+    font-size: 18px !important;
     border: none !important;
     border-radius: 5px !important;
 }
@@ -70,9 +70,11 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 
 // ABOUT US
 // fungsi untuk mengatur padding top dan bottom section
-@function setSectionPadding($is-first-section) {
-    @if ($is-first-section) {
+@function setSectionPadding($section) {
+    @if ($section == "abus-header") {
         @return 250px 0 150px 0;
+    } @else if ($section == "abus-cta") {
+        @return 100px 0 100px 0;
     } @else {
         @return 50px 0 50px 0;
     }
@@ -80,10 +82,13 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 
 // atur padding section
 #abus-header {
-    padding: setSectionPadding(true);
+    padding: setSectionPadding("abus-header");
 }
-section:not(#abus-header, #abus-img) {
-    padding: setSectionPadding(false);
+#abus-cta {
+    padding: setSectionPadding("abus-cta");
+}
+section:not(#abus-header, #abus-cta, #abus-img) {
+    padding: setSectionPadding("");
 }
 
 // about us section 3: values
@@ -119,4 +124,8 @@ section:not(#abus-header, #abus-img) {
 
 #abus-cta .dropdown-menu-dark {
     background-color: $sc-color !important;
+}
+
+#abus-cta .btn-secondary {
+    border-radius: 50px !important;
 }
