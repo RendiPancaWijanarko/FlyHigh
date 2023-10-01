@@ -1,0 +1,23 @@
+.workflow-title {
+  font-size: 32px;
+  color: var(--pr-color);
+}
+
+.workflow-subtitle {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.wf-title {
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 2%;
+}
+
+.wf-paragraph {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2%;
+}
+
+/*# sourceMappingURL=Portfolio.css.map */
