@@ -1,0 +1,45 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gradient-banner {
+  background: linear-gradient(to bottom, #F4841C, #F66D09);
+  padding: 50px 0;
+  color: white;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.section img {
+  max-width: 100%;
+}
+
+.testimonial {
+  background-color: #F66D09;
+  padding: 50px 0;
+  color: white;
+}
+
+.testimonial .title {
+  text-align: center;
+}
+
+.testimonial .card {
+  background-color: #F4841C;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

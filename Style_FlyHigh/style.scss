@@ -1,0 +1,54 @@
+$primary-color: #F4841C;
+$secondary-color: #F66D09;
+$text-color: #333;
+$font-family: 'Poppins', sans-serif;
+
+// Global styles
+body {
+  font-family: $font-family;
+  background-color: #f8f8f8;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+// Banner styles
+.gradient-banner {
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  padding: 50px 0;
+  color: white;
+}
+
+// Contact information section
+.section {
+  padding: 50px 0;
+}
+
+.section .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.section img {
+  max-width: 100%;
+}
+
+// Testimonial styles
+.testimonial {
+  background-color: $secondary-color;
+  padding: 50px 0;
+  color: white;
+}
+
+.testimonial .title {
+  text-align: center;
+}
+
+.testimonial .card {
+  background-color: $primary-color;
+  color: white;
+}
+
