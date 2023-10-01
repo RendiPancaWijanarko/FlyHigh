@@ -68,13 +68,31 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
     background-color: $btn-sc-active !important;
 }
 
+.btn-outline-secondary {
+    border-color: $sc-color !important;
+    color: $sc-color !important;
+    height: 60px !important;
+    width: 200px !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    border-width: 3px;
+    border-radius: 5px !important;
+}
+.btn-outline-secondary:hover {
+    color: $tr-color !important;
+    background-color: $sc-color !important;
+}
+.btn-outline-secondary:active {
+    color: $tr-color !important;
+    background-color: lighten($sc-color, 10%) !important;
+    border: none !important;
+}
+
 // ABOUT US
 // fungsi untuk mengatur padding top dan bottom section
 @function setSectionPadding($section) {
     @if ($section == "abus-header") {
-        @return 250px 0 150px 0;
-    } @else if ($section == "abus-cta") {
-        @return 100px 0 100px 0;
+        @return 150px 0 50px 0;
     } @else {
         @return 50px 0 50px 0;
     }
@@ -84,19 +102,21 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 #abus-header {
     padding: setSectionPadding("abus-header");
 }
-#abus-cta {
-    padding: setSectionPadding("abus-cta");
-}
-section:not(#abus-header, #abus-cta, #abus-img) {
+section:not(#abus-header, #abus-img) {
     padding: setSectionPadding("");
 }
 
-// about us section 3: values
+// about us section header
+#abus-header .btn {
+    height: 46px !important;
+}
+
+// about us section values
 .values-size {
     width: 80px; height: 80px;
 }
 
-// about us section 4 & 5: vision mission
+// about us section vision mission
 .desktablet-size {
     width: 100%; height: 500px;
 }
@@ -104,28 +124,12 @@ section:not(#abus-header, #abus-cta, #abus-img) {
     width: 100%; height: 300px;
 }
 
-// about us section 6: team
+// about us section team
 #abus-team div[class*="card-header"] {
     background-color: #FBECDE;
 }
 
-// about us section 7: cta
-#abus-cta .dropdown-item {
-    color: $tr-color !important;
-}
-
-#abus-cta .dropdown-item:hover {
-    background-color: $pr-color !important;
-}
-
-#abus-cta .dropdown-item:active {
-    background-color: lighten($pr-color, 5%) !important;
-}
-
-#abus-cta .dropdown-menu-dark {
-    background-color: $sc-color !important;
-}
-
-#abus-cta .btn-secondary {
+// about us section cta
+#abus-cta .btn {
     border-radius: 50px !important;
 }
