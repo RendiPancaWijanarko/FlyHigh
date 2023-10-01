@@ -86,6 +86,7 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
     color: $tr-color !important;
     background-color: lighten($sc-color, 10%) !important;
     border: none !important;
+    outline: none !important;
 }
 
 // ABOUT US
@@ -114,6 +115,9 @@ section:not(#abus-header, #abus-img) {
 // about us section values
 #abus-values {
     background-color: #f0f0f0;
+}
+#abus-values i {
+    color: #f0f0f0;
 }
 .values-size {
     width: 80px; height: 80px;

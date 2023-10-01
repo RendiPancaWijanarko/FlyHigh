@@ -80,6 +80,7 @@
   color: #fafafa !important;
   background-color: #4f2a00 !important;
   border: none !important;
+  outline: none !important;
 }
 
 #abus-header {
@@ -92,6 +93,10 @@ section:not(#abus-header, #abus-img) {
 
 #abus-values {
   background-color: #f0f0f0;
+}
+
+#abus-values i {
+  color: #f0f0f0;
 }
 
 .values-size {
