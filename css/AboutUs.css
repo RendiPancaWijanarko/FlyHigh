@@ -90,8 +90,8 @@ section:not(#abus-header, #abus-img) {
   padding: 50px 0 50px 0;
 }
 
-#abus-header .btn {
-  height: 46px !important;
+#abus-values {
+  background-color: #f0f0f0;
 }
 
 .values-size {
