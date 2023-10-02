@@ -69,6 +69,7 @@
   font-size: 18px !important;
   border-width: 3px;
   border-radius: 5px !important;
+  outline: none !important;
 }
 
 .btn-outline-secondary:hover {
@@ -91,6 +92,10 @@ section:not(#abus-header, #abus-img) {
   padding: 50px 0 50px 0;
 }
 
+#abus-header .btn {
+  height: 46px !important;
+}
+
 #abus-values {
   background-color: #f0f0f0;
 }
@@ -102,6 +107,10 @@ section:not(#abus-header, #abus-img) {
 .values-size {
   width: 80px;
   height: 80px;
+}
+
+#abus-vision .btn, #abus-mission .btn {
+  height: 46px !important;
 }
 
 .desktablet-size {
