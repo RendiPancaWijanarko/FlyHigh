@@ -1,10 +1,29 @@
+#hero {
+  background-color: #fafafa;
+}
+
+#why-us {
+  background-color: #fafafa;
+}
+
+.cont-feedback {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+#form-feedback {
+  background-color: #F0F0F0;
+}
+
+#work-flow {
+  background-color: #FBECDE;
+}
+
 .workflow-title {
-  font-size: 32px;
-  color: var(--pr-color);
+  color: #F4841C;
 }
 
 .workflow-subtitle {
-  font-size: 25px;
   line-height: 25px;
 }
 
