@@ -91,21 +91,12 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
 }
 
 // ABOUT US
-// fungsi untuk mengatur padding top dan bottom section
-@function setSectionPadding($section) {
-    @if ($section == "abus-header") {
-        @return 150px 0 50px 0;
-    } @else {
-        @return 50px 0 50px 0;
-    }
-}
-
 // atur padding section
 #abus-header {
-    padding: setSectionPadding("abus-header");
+    padding: 150px 0 50px 0;
 }
 section:not(#abus-header, #abus-img) {
-    padding: setSectionPadding("");
+    padding: 50px 0 50px 0;
 }
 
 // about us section header
