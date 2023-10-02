@@ -22,15 +22,25 @@
   background-color: #fafafa;
 }
 
-.btn-primary:not(.navbar .btn-primary) {
-  background-color: #F4841C !important;
-  color: #fafafa !important;
-  height: 60px !important;
+.base-btn, .base-btn-outline, .btn-outline-secondary, .base-btn-normal, .btn-secondary, .btn-primary:not(.navbar .btn-primary) {
+  height: 55px !important;
   width: 200px !important;
   font-weight: 600 !important;
   font-size: 18px !important;
-  border: none !important;
   border-radius: 5px !important;
+}
+
+.base-btn-normal, .btn-secondary, .btn-primary:not(.navbar .btn-primary) {
+  border: none !important;
+}
+
+.base-btn-outline, .btn-outline-secondary {
+  border-width: 3px !important;
+}
+
+.btn-primary:not(.navbar .btn-primary) {
+  background-color: #F4841C !important;
+  color: #fafafa !important;
 }
 
 .btn-primary:not(.navbar .btn-primary):hover {
@@ -44,12 +54,6 @@
 .btn-secondary {
   background-color: #1C0F00 !important;
   color: #fafafa !important;
-  height: 60px !important;
-  width: 200px !important;
-  font-weight: 600 !important;
-  font-size: 18px !important;
-  border: none !important;
-  border-radius: 5px !important;
 }
 
 .btn-secondary:hover {
@@ -63,13 +67,6 @@
 .btn-outline-secondary {
   border-color: #1C0F00 !important;
   color: #1C0F00 !important;
-  height: 60px !important;
-  width: 200px !important;
-  font-weight: 600 !important;
-  font-size: 18px !important;
-  border-width: 3px;
-  border-radius: 5px !important;
-  outline: none !important;
 }
 
 .btn-outline-secondary:hover {
@@ -81,19 +78,22 @@
   color: #fafafa !important;
   background-color: #4f2a00 !important;
   border: none !important;
-  outline: none !important;
 }
 
 #abus-header {
   padding: 150px 0 50px 0;
 }
 
-section:not(#abus-header, #abus-img) {
+section:not(#abus-header) {
   padding: 50px 0 50px 0;
 }
 
 #abus-header .btn {
   height: 46px !important;
+}
+
+.strip-header {
+  margin-right: 10px;
 }
 
 #abus-values {
@@ -109,13 +109,14 @@ section:not(#abus-header, #abus-img) {
   height: 80px;
 }
 
-#abus-vision .btn, #abus-mission .btn {
-  height: 46px !important;
-}
-
 .desktablet-size {
   width: 100%;
   height: 500px;
+}
+
+.mobile-sm-size {
+  width: 100%;
+  height: 400px;
 }
 
 .mobile-size {

@@ -1,0 +1,10 @@
+// COLOR
+$pr-color: #F4841C;
+$sc-color: #1C0F00;
+$tr-color: #fafafa;
+
+// BUTTON
+$btn-pr-hover: lighten($pr-color, 10%);
+$btn-pr-active: lighten($btn-pr-hover, 5%);
+$btn-sc-hover: lighten($sc-color, 10%);
+$btn-sc-active: lighten($btn-sc-hover, 5%);
