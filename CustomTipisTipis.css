@@ -1,0 +1,82 @@
+/* Root */
+:root {
+    --pr-color : #F4841C;
+    --sc-color : #1C0F00;
+    --tr-color : #fafafa; 
+}
+
+body {
+    font-family: 'Poppins', noto-serif;
+    background-color: var(--tr-color);
+}
+
+* {
+    z-index: 2;
+}
+ 
+/* Navbar */
+.navbar {
+    z-index: 3;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-primary{
+    font-weight: 600;
+    font-size: 18px;
+    width: 140px;
+    height: 46px;
+    background-color: var(--pr-color);
+    color: var(--tr-color);
+    border: none;
+}
+
+/* Portfolio_Hero Section */
+#hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.img-hero {
+    height: 80%;
+}
+
+.hero-tagline {
+    margin-top: 220px;
+}
+
+.hero-tagline h1{
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.hero-tagline p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Portfolio_workflow section */
+.workflow-title {
+    font-size: 32px;
+    color: var(--pr-color);
+}
+
+.workflow-subtitle {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.wf-title {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 2%;
+}
+
+.wf-paragraph {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2%;
+}
+
+/* Portfolio_whyus section */
+

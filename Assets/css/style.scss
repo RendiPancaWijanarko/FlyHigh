@@ -1,54 +1,53 @@
-$primary-color: #F4841C;
+$primary-color: #ffff;
 $secondary-color: #F66D09;
-$text-color: #333;
 $font-family: 'Poppins', sans-serif;
-
-// Global styles
-body {
-  font-family: $font-family;
-  background-color: #f8f8f8;
-  color: $text-color;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+$padding-small: 10px;
+$padding-medium: 20px;
+$padding-large: 30px;
 
 
-// Banner styles
 .gradient-banner {
-  background: linear-gradient(to bottom, $primary-color, $secondary-color);
-  padding: 50px 0;
+  padding: $padding-medium 0;
   color: white;
+  h3 {
+    color: $primary-color;
+  }
+  h1 {
+    font-size: 55px;
+  }
 }
 
 // Contact information section
 .section {
-  padding: 50px 0;
+  padding: $padding-medium 0;
+  .col-md-4 {
+    margin-bottom: $padding-small;
+  }
+  img {
+    max-width: 100%;
+  }
 }
 
-.section .col-md-4 {
-  margin-bottom: 20px;
-}
-
-.section img {
-  max-width: 100%;
-}
-
-// Testimonial styles
-.testimonial {
-  background-color: $secondary-color;
-  padding: 50px 0;
-  color: white;
-}
-
-.testimonial .title {
-  text-align: center;
-}
-
-.testimonial .card {
+// Feature section
+.feature {
   background-color: $primary-color;
+  padding: $padding-medium 0;
   color: white;
+  .image-content {
+    img {
+      max-width: 100%;
+    }
+  }
+  .feature-content {
+    h2 {
+      font-weight: bold;
+      font-size: 35px;
+    }
+    p.desc {
+      color: #FAFAFA;
+    }
+  }
 }
+
+
 
