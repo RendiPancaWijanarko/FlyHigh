@@ -84,9 +84,5 @@ $btn-sc-active: AboutUs_Var.$btn-sc-active;
 .btn-outline-secondary:hover {
     color: $tr-color !important;
     background-color: $sc-color !important;
-}
-.btn-outline-secondary:active {
-    color: $tr-color !important;
-    background-color: lighten($sc-color, 10%) !important;
     border: none !important;
 }
