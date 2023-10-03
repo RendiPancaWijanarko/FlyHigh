@@ -38,51 +38,101 @@ $btn-sc-active: AboutUs_Var.$btn-sc-active;
     font-size: 18px !important;
     border-radius: 5px !important;
 }
-.base-btn-normal {
+@mixin base-btn-normal($type) {
     @extend .base-btn;
     border: none !important;
+
+    // kondisi
+    @if ($type == primary) {
+        background-color: $pr-color !important;
+        color: $tr-color !important;
+
+        &:hover {
+            background-color: $btn-pr-hover !important;
+        }
+
+        &:active {
+            background-color: $btn-pr-active !important;
+        }
+    } @else if ($type == secondary) {
+        background-color: $sc-color !important;
+        color: $tr-color !important;
+
+        &:hover {
+            background-color: $btn-sc-hover !important;
+        }
+
+        &:active {
+            background-color: $btn-sc-active !important;
+        }
+    }
 }
-.base-btn-outline {
+@mixin base-btn-outline($type) {
     @extend .base-btn;
     border-width: 3px !important;
+
+    // kondisi
+    @if ($type == secondary) {
+        border-color: $sc-color !important;
+        color: $sc-color !important;
+
+        &:hover {
+            color: $tr-color !important;
+            background-color: $sc-color !important;
+            border: none !important;
+            outline: none !important;
+        }
+    }
 }
 
 // primary
 // normal
 .btn-primary:not(.navbar .btn-primary) {
-    @extend .base-btn-normal;
-    background-color: $pr-color !important;
-    color: $tr-color !important;
-}
-.btn-primary:not(.navbar .btn-primary):hover {
-    background-color: $btn-pr-hover !important;
-}
-.btn-primary:not(.navbar .btn-primary):active {
-    background-color: $btn-pr-active !important;
+    // @extend .base-btn-normal;
+    // background-color: $pr-color !important;
+    // color: $tr-color !important;
+
+    // &:hover {
+    //     background-color: $btn-pr-hover !important;
+    // }
+
+    // &:active {
+    //     background-color: $btn-pr-active !important;
+    // }
+
+    @include base-btn-normal(primary);
 }
 
 // secondary
 // normal
 .btn-secondary {
-    @extend .base-btn-normal;
-    background-color: $sc-color !important;
-    color: $tr-color !important;
-}
-.btn-secondary:hover {
-    background-color: $btn-sc-hover !important;
-}
-.btn-secondary:active {
-    background-color: $btn-sc-active !important;
+    // @extend .base-btn-normal;
+    // background-color: $sc-color !important;
+    // color: $tr-color !important;
+
+    // &:hover {
+    //     background-color: $btn-sc-hover !important;
+    // }
+
+    // &:active {
+    //     background-color: $btn-sc-active !important;
+    // }
+
+    @include base-btn-normal(secondary);
 }
 
 // outline
 .btn-outline-secondary {
-    @extend .base-btn-outline;
-    border-color: $sc-color !important;
-    color: $sc-color !important;
-}
-.btn-outline-secondary:hover {
-    color: $tr-color !important;
-    background-color: $sc-color !important;
-    border: none !important;
+    // @extend .base-btn-outline;
+    // border-color: $sc-color !important;
+    // color: $sc-color !important;
+
+    // &:hover {
+    //     color: $tr-color !important;
+    //     background-color: $sc-color !important;
+    //     border: none !important;
+    //     outline: none !important;
+    // }
+
+    @include base-btn-outline(secondary);
 }
