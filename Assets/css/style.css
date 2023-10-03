@@ -1,10 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  background: linear-gradient(to right, #FFFFFF, #FBD2AC, #fa9c43);
   font-family: "Poppins", sans-serif;
 }
 
@@ -57,6 +52,10 @@ body {
 }
 .button:hover {
   background-color: #F66D09;
+}
+
+.testimonial {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

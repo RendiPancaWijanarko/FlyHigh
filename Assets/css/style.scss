@@ -4,14 +4,20 @@ $font-family: 'Poppins', sans-serif;
 $padding-small: 10px;
 $padding-medium: 20px;
 $padding-large: 30px;
+$gradient-colors: #FFFFFF, #FBD2AC, #fa9c43;
+$gradient-background: linear-gradient(to right, $gradient-colors);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+// Function untuk menghasilkan warna yang lebih terang
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
 }
 
+$darkened-color: darken-color($gradient-background, 10%);
+$lightened-color: lighten-color($primary-color, 10%);
+
 body {
+  background: $gradient-background;
   font-family: $font-family;
 }
 
@@ -73,4 +79,7 @@ body {
   &:hover {
     background-color: $secondary-color;
   }
+}
+.testimonial {
+  background-color: $lightened-color;
 }
