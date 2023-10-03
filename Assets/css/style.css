@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .gradient-banner {
   padding: 20px 0;
   color: white;
@@ -33,6 +43,20 @@
 }
 .feature .feature-content p.desc {
   color: #FAFAFA;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #F66D09;
 }
 
 /*# sourceMappingURL=style.css.map */
