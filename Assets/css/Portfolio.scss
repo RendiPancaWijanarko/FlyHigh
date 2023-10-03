@@ -1,61 +1,84 @@
-//* !VARIABEL SASS! *//
-
+// !PARA VARIABEL DAN FUNCTION! //
 // Variabel font
 $subtitle-line-height: 25px;
 $paragraph-font-size: 16px;
 
-// Root  pr, sc, tr
-$root-color: #F4841C, #1C0F00, #fafafa;
+// Root colors
+$root-colors: (
+  pr: #F4841C,
+  sc: #1C0F00,
+  tr: #fafafa
+);
 
-// Warna bg section
-$bg-soft-white: nth($root-color, 3);
+// Background colors
+$bg-soft-white: get-color('tr');
 $bg-light-orange: #FBECDE;
 $bg-light-grey: #F0F0F0;
 
-// ================================================================================================================================================== //
-// CSS
+// Function untuk mengambil warna berdasarkan nama
+@function get-color($color-name) {
+  @return map-get($root-colors, $color-name);
+}
+
+// Mixin untuk menghasilkan gaya teks
+@mixin text-style($font-size, $line-height, $letter-spacing) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+// ===================================================================================================== //
+// ===================================================================================================== //
 
 // Portfolio_hero
 #hero {
-    background-color: $bg-soft-white;
+  background-color: $bg-soft-white;
 }
 
 // Portfolio_whyus
 #why-us {
-    background-color: $bg-soft-white;
+  background-color: $bg-soft-white;
 }
 
 // Portfolio_feedback
 .cont-feedback {
-    padding-top: 100px;
-    padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
+.icons {
+    img {
+      width: 40px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.2); // Membesarkan ikon saat hover
+        filter: brightness(1.2); // Peningkatan kecerahan saat hover
+      }
+    }
+  }
+
 #form-feedback {
-    background-color: $bg-light-grey;
+  background-color: $bg-light-grey;
 }
 
 // Portfolio_workflow section
 #work-flow {
-    background-color: $bg-light-orange;
+  background-color: $bg-light-orange;
 }
 
 .workflow-title {
-    color: nth($root-color, 1);
+  color: get-color('pr');
 }
 
 .workflow-subtitle {
-    line-height: $subtitle-line-height;
+  line-height: $subtitle-line-height;
 }
 
 .wf-title {
-    font-size: 19px;
-    line-height: 30px;
-    letter-spacing: 2%;
+  @include text-style(19px, 30px, 2%);
 }
 
 .wf-paragraph {
-    font-size: $paragraph-font-size;
-    line-height: 20px;
-    letter-spacing: 2%;
+  @include text-style($paragraph-font-size, 20px, 2%);
 }

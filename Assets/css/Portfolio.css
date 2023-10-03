@@ -1,14 +1,23 @@
 #hero {
-  background-color: #fafafa;
+  background-color: get-color("tr");
 }
 
 #why-us {
-  background-color: #fafafa;
+  background-color: get-color("tr");
 }
 
 .cont-feedback {
   padding-top: 100px;
   padding-bottom: 80px;
+}
+
+.icons img {
+  width: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 #form-feedback {
