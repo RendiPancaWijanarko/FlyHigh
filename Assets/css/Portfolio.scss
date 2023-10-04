@@ -29,6 +29,26 @@ $bg-light-grey: #F0F0F0;
 
 // ===================================================================================================== //
 // ===================================================================================================== //
+.btn-primary {
+  font-weight: 400;
+  font-size: 18px;
+  width: 140px;
+  height: 46px;
+  background-color: get-color('pr');
+  color: get-color('tr');
+  border: none;
+
+  &:hover {
+    font-weight: 500;
+    font-size: 18px;
+    width: 140px;
+    height: 46px;
+    background-color: lighten(get-color('pr'), 10%);
+    color: get-color('tr');
+    border: none;
+  }
+}
+
 
 // Portfolio_hero
 #hero {
@@ -82,3 +102,9 @@ $bg-light-grey: #F0F0F0;
 .wf-paragraph {
   @include text-style($paragraph-font-size, 20px, 2%);
 }
+
+// Portfolio_project section
+#project-showcase {
+  background-color: lighten($bg-light-grey, 2.5%);
+}
+

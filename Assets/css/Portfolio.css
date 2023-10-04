@@ -1,3 +1,22 @@
+.btn-primary {
+  font-weight: 400;
+  font-size: 18px;
+  width: 140px;
+  height: 46px;
+  background-color: #F4841C;
+  color: #fafafa;
+  border: none;
+}
+.btn-primary:hover {
+  font-weight: 500;
+  font-size: 18px;
+  width: 140px;
+  height: 46px;
+  background-color: #f69e4d;
+  color: #fafafa;
+  border: none;
+}
+
 #hero {
   background-color: get-color("tr");
 }
@@ -46,6 +65,10 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 2%;
+}
+
+#project-showcase {
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=Portfolio.css.map */
