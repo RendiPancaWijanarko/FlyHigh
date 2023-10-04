@@ -68,7 +68,11 @@
 }
 
 #project-showcase {
-  background-color: #f6f6f6;
+  background-color: #1f1000;
+}
+
+.text {
+  color: #fafafa;
 }
 
 /*# sourceMappingURL=Portfolio.css.map */

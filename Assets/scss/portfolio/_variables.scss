@@ -1,0 +1,21 @@
+// !PARA VARIABEL DAN FUNCTION! //
+// Variabel font
+$subtitle-line-height: 25px;
+$paragraph-font-size: 16px;
+
+// Root colors
+$root-colors: (
+  pr: #F4841C,
+  sc: #1C0F00,
+  tr: #fafafa
+);
+
+// Background colors
+$bg-soft-white: get-color('tr');
+$bg-light-orange: #FBECDE;
+$bg-light-grey: #F0F0F0;
+
+// Function untuk mengambil warna berdasarkan nama
+@function get-color($color-name) {
+  @return map-get($root-colors, $color-name);
+}
