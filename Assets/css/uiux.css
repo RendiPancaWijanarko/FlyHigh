@@ -23,8 +23,8 @@
 }
 
 .persegi-panjang {
-    width: 15px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
-    height: 150px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
+    width: 150px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+    height: 15px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
     background-color: #000000; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
     display: flex;
     justify-content: center;
