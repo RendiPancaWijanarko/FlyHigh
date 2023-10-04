@@ -21,6 +21,26 @@ body {
     font-size: 18px;
 }
 
+.btn-primary{
+    font-weight: 600;
+    font-size: 18px;
+    width: 140px;
+    height: 46px;
+    background-color: var(--pr-color);
+    color: var(--tr-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    font-weight: 600;
+    font-size: 18px;
+    width: 140px;
+    height: 46px;
+    background-color: #fba24f;
+    color: var(--tr-color);
+    border: none;
+}
+
 /* Footer */
 footer {
     background-color: #3F3E3C;
