@@ -1,0 +1,37 @@
+#abus-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+#abus-header h3 {
+    color: #F4841C;
+}
+.container {
+    display: flex;
+}
+.lingkaran {
+    width: 150px; /* Ubah lebar lingkaran sesuai kebutuhan Anda */
+    height: 150px; /* Ubah tinggi lingkaran sesuai kebutuhan Anda */
+    border-radius: 50%;
+    background-color: #3498db; /* Ubah warna latar belakang lingkaran sesuai keinginan Anda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.persegi-panjang {
+    width: 150px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+    height: 150px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
+    background-color: #27ae60; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: white; /* Ubah warna teks sesuai keinginan Anda */
+    font-size: 18px; /* Ubah ukuran teks sesuai keinginan Anda */
+}
