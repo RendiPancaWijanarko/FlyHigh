@@ -13,8 +13,8 @@
     display: flex;
 }
 .lingkaran {
-    width: 150px; /* Ubah lebar lingkaran sesuai kebutuhan Anda */
-    height: 150px; /* Ubah tinggi lingkaran sesuai kebutuhan Anda */
+    width: 50px; /* Ubah lebar lingkaran sesuai kebutuhan Anda */
+    height: 50px; /* Ubah tinggi lingkaran sesuai kebutuhan Anda */
     border-radius: 50%;
     background-color: #000000; /* Ubah warna latar belakang lingkaran sesuai keinginan Anda */
     display: flex;
@@ -23,8 +23,8 @@
 }
 
 .persegi-panjang {
-    width: 150px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
-    height: 15px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
+    width: 75px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+    height: 10px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
     background-color: #000000; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
     display: flex;
     justify-content: center;
@@ -32,6 +32,6 @@
 }
 
 span {
-    color: #F4841C; /* Ubah warna teks sesuai keinginan Anda */
+    color: white; /* Ubah warna teks sesuai keinginan Anda */
     font-size: 18px; /* Ubah ukuran teks sesuai keinginan Anda */
 }
