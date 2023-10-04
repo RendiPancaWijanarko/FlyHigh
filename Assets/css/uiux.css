@@ -1,11 +1,3 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--tr-color);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 #abus-header {
     display: flex;
     flex-direction: column;
@@ -24,22 +16,22 @@ body {
     width: 150px; /* Ubah lebar lingkaran sesuai kebutuhan Anda */
     height: 150px; /* Ubah tinggi lingkaran sesuai kebutuhan Anda */
     border-radius: 50%;
-    background-color: #3498db; /* Ubah warna latar belakang lingkaran sesuai keinginan Anda */
+    background-color: #000000; /* Ubah warna latar belakang lingkaran sesuai keinginan Anda */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .persegi-panjang {
-    width: 150px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+    width: 15px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
     height: 150px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
-    background-color: #27ae60; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
+    background-color: #000000; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 span {
-    color: white; /* Ubah warna teks sesuai keinginan Anda */
+    color: #F4841C; /* Ubah warna teks sesuai keinginan Anda */
     font-size: 18px; /* Ubah ukuran teks sesuai keinginan Anda */
 }
