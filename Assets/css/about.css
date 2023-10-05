@@ -67,7 +67,7 @@
 .btn-outline-secondary:hover, .btn-outline-secondary:active {
   color: #fafafa !important;
   background-color: #1C0F00 !important;
-  border: none !important;
+  border-color: #1C0F00 !important;
 }
 
 #abus-header {

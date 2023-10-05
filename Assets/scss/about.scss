@@ -89,7 +89,7 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
     &:hover, &:active {
         color: $tr-color !important;
         background-color: $sc-color !important;
-        border: none !important;
+        border-color: $sc-color !important;
     }
 }
 
