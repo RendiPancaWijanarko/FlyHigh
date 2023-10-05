@@ -1,14 +1,16 @@
+@use 'button';
 @import 'variables';
 @import 'mixins';
 
-
+$btn-color: button.$button-color;
+$txt-color: button.$button-font-color;
 .btn-primary {
   font-weight: 400;
   font-size: 18px;
   width: 140px;
   height: 46px;
-  background-color: get-color('pr');
-  color: get-color('tr');
+  background-color: $btn-color;
+  color: $txt-color;
   border: none;
 
   &:hover {
@@ -16,8 +18,8 @@
     font-size: 18px;
     width: 140px;
     height: 46px;
-    background-color: lighten(get-color('pr'), 10%);
-    color: get-color('tr');
+    background-color: lighten($btn-color, 10%);
+    color: $txt-color;
     border: none;
   }
 }
@@ -77,10 +79,10 @@
 
 // Portfolio_project section
 #project-showcase {
-  background-color: lighten(get-color('sc'), 0.5%)
+  background-color: $bg-light-grey
 }
 
 .text {
-  color: get-color('tr');
+  color: get-color('sc');
 }
 
