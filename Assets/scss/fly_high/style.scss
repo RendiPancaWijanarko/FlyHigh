@@ -1,0 +1,40 @@
+@use 'font';
+@import 'variabelflyhigh';
+@import'mixinsflyhigh';
+
+body {
+  background: $gradient-background;
+  @include font.font-style;
+}
+
+.gradient-banner {
+  @extend .gradient-banner;
+}
+
+.section {
+  @extend .section;
+}
+
+.feature {
+  @extend .feature;
+}
+
+.testimonial {
+  @extend .testimonial;
+}
+
+
+.button {
+  display: inline-block;
+  padding: $padding-small $padding-medium;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
