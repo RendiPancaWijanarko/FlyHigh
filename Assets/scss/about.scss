@@ -1,10 +1,9 @@
 // VARIABEL
-// COLOR
+// color
 $pr-color: #F4841C;
 $sc-color: #1C0F00;
 $tr-color: #fafafa;
-
-// BUTTON
+// button
 $btn-pr-hover: lighten($pr-color, 10%);
 $btn-pr-active: lighten($btn-pr-hover, 5%);
 $btn-sc-hover: lighten($sc-color, 10%);
@@ -87,11 +86,10 @@ $btn-sc-active: lighten($btn-sc-hover, 5%);
     border-color: $sc-color !important;
     color: $sc-color !important;
 
-    &:hover {
+    &:hover, &:active {
         color: $tr-color !important;
         background-color: $sc-color !important;
         border: none !important;
-        outline: none !important;
     }
 }
 
@@ -126,7 +124,6 @@ section:not(#abus-header) {
 }
 
 // about us section vision mission
-// perulangan
 $img-sizes: ("desktop": 500px, "tablet": 500px, "mobile-sm": 400px, "mobile": 300px);
 @each $res, $size in $img-sizes {
     .#{$res}-size {
