@@ -1,0 +1,52 @@
+.gradient-banner {
+    padding: $padding-medium 0;
+    color: white;
+  
+    h3 {
+      color: $primary-color;
+    }
+  
+    h1 {
+      font-size: 55px;
+    }
+  }
+  
+  .section {
+    padding: $padding-medium 0;
+  
+    .col-md-4 {
+      margin-bottom: $padding-small;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  .feature {
+    background-color: $primary-color;
+    padding: $padding-medium 0;
+    color: white;
+  
+    .image-content {
+      img {
+        max-width: 100%;
+      }
+    }
+  
+    .feature-content {
+      h2 {
+        font-weight: bold;
+        font-size: 35px;
+      }
+  
+      p.desc {
+        color: #FAFAFA;
+      }
+    }
+  }
+  
+  .testimonial {
+    background-color: $lightened-color;
+  }
+  

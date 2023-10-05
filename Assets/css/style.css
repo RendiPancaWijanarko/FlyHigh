@@ -3,6 +3,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background: linear-gradient(to right, #FFFFFF, #FBD2AC, #fa9c43);
+  font-family: "Poppins", sans-serif;
+}
+
 .gradient-banner {
   padding: 20px 0;
   color: white;
@@ -40,6 +45,15 @@ body {
   color: #FAFAFA;
 }
 
+.testimonial {
+  background-color: white;
+}
+
+body {
+  background: linear-gradient(to right, #FFFFFF, #FBD2AC, #fa9c43);
+  font-family: "Poppins", sans-serif;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -52,10 +66,6 @@ body {
 }
 .button:hover {
   background-color: #F66D09;
-}
-
-.testimonial {
-  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
