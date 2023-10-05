@@ -19,3 +19,4 @@ $bg-light-grey: #F0F0F0;
 @function get-color($color-name) {
   @return map-get($root-colors, $color-name);
 }
+
