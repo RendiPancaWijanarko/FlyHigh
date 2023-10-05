@@ -79,10 +79,10 @@ $txt-color: button.$button-font-color;
 
 // Portfolio_project section
 #project-showcase {
-  background-color: lighten(get-color('sc'), 0.5%)
+  background-color: $bg-light-grey
 }
 
 .text {
-  color: get-color('tr');
+  color: get-color('sc');
 }
 
