@@ -104,6 +104,82 @@ section:not(#abus-header) {
     padding: 50px 0 50px 0;
 }
 
+// atur ukuran gambar dan btn sesuai breakpoint
+/* xs */
+.header-img {
+    height: 300px;
+    width: 250px;
+}
+.cta-img {
+    height: 250px;
+    width: 250px;
+}
+#abus-vision img, #abus-mission img {
+    height: 300px;
+    width: 350px;
+}
+#abus-cta .btn {
+    font-size: 18px !important;
+    width: 200px !important;
+}
+/* sm */
+@media (min-width: 576px) {
+    .header-img {
+        height: 350px;
+        width: 300px;
+    }
+    .cta-img {
+        height: 300px;
+        width: 300px;
+    }
+    #abus-vision img, #abus-mission img {
+        height: 350px;
+        width: 450px;
+    }
+    #abus-cta .btn {
+        font-size: 18px !important;
+        width: 200px !important;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .header-img {
+        height: auto;
+        width: auto;
+    }
+    .cta-img {
+        height: auto;
+        width: auto;
+    }
+    #abus-vision img, #abus-mission img {
+        height: 400px;
+        width: 550px;
+    }
+    #abus-cta .btn {
+        font-size: 17px !important;
+        width: 160px !important;
+    }
+}
+/* lg */
+@media (min-width: 992px) {
+    .header-img {
+        height: auto;
+        width: auto;
+    }
+    .cta-img {
+        height: auto;
+        width: auto;
+    }
+    #abus-vision img, #abus-mission img {
+        height: 500px;
+        width: 500px;
+    }
+    #abus-cta .btn {
+        font-size: 18px !important;
+        width: 200px !important;
+    }
+}
+
 // about us section header
 #abus-header .btn {
     height: 46px !important;
@@ -121,15 +197,6 @@ section:not(#abus-header) {
 }
 .values-size {
     width: 80px; height: 80px;
-}
-
-// about us section vision mission
-$img-sizes: ("desktop": 500px, "tablet": 500px, "mobile-sm": 400px, "mobile": 300px);
-@each $res, $size in $img-sizes {
-    .#{$res}-size {
-        width: 100%;
-        height: $size;
-    }
 }
 
 // about us section team
