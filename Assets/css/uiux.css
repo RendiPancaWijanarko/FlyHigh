@@ -90,6 +90,19 @@ span {
 .pt-5,.pb-5{
     background-color: #fafafa;
 }
+/* Inside your existing CSS file */
+
+#footer a:hover {
+    color: #F4841C;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#footer button:hover {
+    background-color: #F4841C;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 /* ... (CSS code before this) ... */
 
@@ -137,36 +150,101 @@ span {
         margin: 0;
         max-width: 100%; /* Ensure the image does not exceed its parent's width */
     }
-    @media (min-width: 768px) and (max-width: 991px) {
-        .lingkaran,
-        .lingkaran2 {
-            width: 30px;
-            height: 30px;
-            margin-top: -56px;
-        }
-    
-        .persegi-panjang,
-        .persegi-panjang2,
-        .persegi-panjang3 {
-            width: 60px;
-            height: 8px;
-            margin-top: -52px;
-        }
-    
-        .teks-di-bawah {
-            font-size: 10px;
-        }
-    
-        .kotak-di-bawah {
-            height: 30px;
-        }
-    
-        .img-uiux-k {
-            padding: 15px;
-        }
+    #abus-header {
+        padding-left: 33%;
+        padding-right: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    .centered-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #abus-header h3 {
+        color: #F4841C;
+    }
+    .container {
+        display: flex;
+    }
+    .lingkaran {
+        width: 50px; /* Ubah lebar lingkaran sesuai kebutuhan Anda */
+        height: 50px; /* Ubah tinggi lingkaran sesuai kebutuhan Anda */
+        border-radius: 50%;
+        background-color: #1C0F00; /* Ubah warna latar belakang lingkaran sesuai keinginan Anda */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lingkaran2 {
+        width: 50px; /* Ubah lebar lingkaran sesuai kebutuhan Anda */
+        height: 50px; /* Ubah tinggi lingkaran sesuai kebutuhan Anda */
+        border-radius: 50%;
+        background-color: #fafafa; /* Ubah warna latar belakang lingkaran sesuai keinginan Anda */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .persegi-panjang {
+        width: 75px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+        height: 10px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
+        background-color: #1C0F00; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
+        margin-top: 20px;
+    }
+    .persegi-panjang2 {
+        width: 75px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+        height: 10px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
+        background-color: #fafafa; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
+        margin-top: 20px;
+    }
+    .persegi-panjang3 {
+        width: 150px; /* Ubah lebar persegi panjang sesuai kebutuhan Anda */
+        height: 10px; /* Ubah tinggi persegi panjang sesuai kebutuhan Anda */
+        background-color: #fafafa; /* Ubah warna latar belakang persegi panjang sesuai keinginan Anda */
+        margin-top: 20px;
+    }
+    span {
+        color: #fafafa; /* Ubah warna teks sesuai keinginan Anda */
+        font-size: 18px; /* Ubah ukuran teks sesuai keinginan Anda */
+    }.lingkaran,
+    .lingkaran2 {
+        position: relative;
     }
     
-    /* Media query for mobile devices (up to 767px) */
+    .teks-di-bawah {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #1C0F00; /* Warna teks di bawah lingkaran */
+        font-weight: bold;
+        white-space: nowrap; /* Menghindari line break */
+    }
+    /* Tambahkan ini di dalam file CSS Anda */
+    
+    .kotak-di-bawah {
+        width: 100%; /* Sesuaikan lebar kotak dengan kebutuhan Anda */
+        height: 40%; /* Sesuaikan tinggi kotak dengan kebutuhan Anda */
+        background-color: #fafafa; /* Sesuaikan warna latar belakang kotak dengan kebutuhan Anda */
+        border-radius: 35px; /* Ini membuat sudut kotak tidak lancip */
+        margin-top: 50px; /* Sesuaikan jarak antara kotak dan teks di bawahnya dengan kebutuhan Anda */
+    }
+    .img-uiux-k{
+        padding: 60px;
+        margin-left: 1%;
+      
+    }
+    .pt-5,.pb-5{
+        background-color: #fafafa;
+    }
+    
+    /* ... (CSS code before this) ... */
+    
     @media (max-width: 767px) {
         #abus-header {
             padding: 50px 15px;
@@ -176,38 +254,42 @@ span {
         .lingkaran2 {
             width: 20px;
             height: 20px;
-            margin-top: -32px;
+            max-width: 100%; /* Ensure the elements do not exceed their parent's width */
+            margin-top: -112px;
         }
     
         .persegi-panjang,
         .persegi-panjang2 {
             width: 40px;
             height: 6px;
-            margin-top: -28px;
+            max-width: 100%; /* Ensure the elements do not exceed their parent's width */
+            margin-top: -105px;
         }
-    
-        .persegi-panjang3 {
-            width: 80px;
+        .persegi-panjang3{
+            width : 80px;
             height: 6px;
-            margin-top: -28px;
+            max-width: 100%; /* Ensure the elements do not exceed their parent's width */
+            margin-top: -105px;
         }
-    
         .teks-di-bawah {
             font-size: 6px;
-            margin-bottom: 10px;
+            margin-bottom: 20px; /* Sesuaikan nilai margin-bottom sesuai kebutuhan */
         }
-    
         span {
-            font-size: 12px;
+            font-size: 14px;
         }
     
         .kotak-di-bawah {
-            height: 15px;
+            height: 20px;
+            max-width: 100%; /* Ensure the element does not exceed its parent's width */
         }
     
         .img-uiux-k {
             padding: 5px;
             margin: 0;
+            max-width: 100%; /* Ensure the image does not exceed its parent's width */
         }
+        
     }
+    
 }
