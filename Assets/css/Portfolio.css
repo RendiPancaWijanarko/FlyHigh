@@ -9,12 +9,35 @@
 }
 .btn-primary:hover {
   font-weight: 500;
+  background-color: #f69e4d;
+}
+
+.btn-secondary {
+  font-weight: 400;
   font-size: 18px;
   width: 140px;
   height: 46px;
-  background-color: #f69e4d;
+  background-color: #110900;
   color: #fafafa;
   border: none;
+}
+.btn-secondary:hover {
+  font-weight: 500;
+  background-color: #442400;
+}
+
+.btn-tertiary {
+  font-weight: 400;
+  font-size: 18px;
+  width: 140px;
+  height: 46px;
+  background-color: #fafafa;
+  color: #F4841C;
+  border: 1px solid #fafafa;
+}
+.btn-tertiary:hover {
+  font-weight: 500;
+  background-color: white;
 }
 
 #hero {

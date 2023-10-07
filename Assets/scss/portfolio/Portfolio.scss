@@ -1,28 +1,6 @@
-@use 'button';
+@import 'button';
 @import 'variables';
 @import 'mixins';
-
-$btn-color: button.$button-color;
-$txt-color: button.$button-font-color;
-.btn-primary {
-  font-weight: 400;
-  font-size: 18px;
-  width: 140px;
-  height: 46px;
-  background-color: $btn-color;
-  color: $txt-color;
-  border: none;
-
-  &:hover {
-    font-weight: 500;
-    font-size: 18px;
-    width: 140px;
-    height: 46px;
-    background-color: lighten($btn-color, 10%);
-    color: $txt-color;
-    border: none;
-  }
-}
 
 $theme: light;
 
