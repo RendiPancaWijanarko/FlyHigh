@@ -137,4 +137,77 @@ span {
         margin: 0;
         max-width: 100%; /* Ensure the image does not exceed its parent's width */
     }
+    @media (min-width: 768px) and (max-width: 991px) {
+        .lingkaran,
+        .lingkaran2 {
+            width: 30px;
+            height: 30px;
+            margin-top: -56px;
+        }
+    
+        .persegi-panjang,
+        .persegi-panjang2,
+        .persegi-panjang3 {
+            width: 60px;
+            height: 8px;
+            margin-top: -52px;
+        }
+    
+        .teks-di-bawah {
+            font-size: 10px;
+        }
+    
+        .kotak-di-bawah {
+            height: 30px;
+        }
+    
+        .img-uiux-k {
+            padding: 15px;
+        }
+    }
+    
+    /* Media query for mobile devices (up to 767px) */
+    @media (max-width: 767px) {
+        #abus-header {
+            padding: 50px 15px;
+        }
+    
+        .lingkaran,
+        .lingkaran2 {
+            width: 20px;
+            height: 20px;
+            margin-top: -32px;
+        }
+    
+        .persegi-panjang,
+        .persegi-panjang2 {
+            width: 40px;
+            height: 6px;
+            margin-top: -28px;
+        }
+    
+        .persegi-panjang3 {
+            width: 80px;
+            height: 6px;
+            margin-top: -28px;
+        }
+    
+        .teks-di-bawah {
+            font-size: 6px;
+            margin-bottom: 10px;
+        }
+    
+        span {
+            font-size: 12px;
+        }
+    
+        .kotak-di-bawah {
+            height: 15px;
+        }
+    
+        .img-uiux-k {
+            padding: 5px;
+            margin: 0;
+        }
+    }
 }
