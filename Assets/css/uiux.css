@@ -83,3 +83,6 @@ span {
 .section img {
     max-width: 100%;
 }
+.feature .image-content img {
+    max-width: 100%;
+  }
