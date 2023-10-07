@@ -32,12 +32,12 @@ $txt-color-tertiary: get-color('pr');
     height: 46px;
     background-color: $btn-color;
     color: $txt-color;
-    border: if($btn-type == 'tertiary', #{1px solid $btn-color}, none);
+    border: if($btn-type == 'tertiary', 3px solid black, none);
   
     &:hover {
       font-weight: 500;
       background-color: lighten($btn-color, 10%);
-      border: if($btn-type == 'tertiary', #{2px solid $btn-color}, none);
+      border: if($btn-type == 'tertiary', 5px solid black, none);
     }
   }
   

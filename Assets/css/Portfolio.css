@@ -35,12 +35,12 @@
   height: 46px;
   background-color: #fafafa;
   color: #F4841C;
-  border: 1px solid #fafafa;
+  border: 3px solid black;
 }
 .btn-tertiary:hover {
   font-weight: 500;
   background-color: white;
-  border: 2px solid #fafafa;
+  border: 5px solid black;
 }
 
 #hero {
