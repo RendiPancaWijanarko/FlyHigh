@@ -1,6 +1,13 @@
+@import 'variables';
+
 // Mixin untuk menghasilkan gaya teks
 @mixin text-style($font-size, $line-height, $letter-spacing) {
     font-size: $font-size;
     line-height: $line-height;
     letter-spacing: $letter-spacing;
   }
+
+// Mixin untuk background gradient linear
+@mixin gradient-bg {
+  background: linear-gradient(to top, get-color('tr'), get-color('sc'));
+}

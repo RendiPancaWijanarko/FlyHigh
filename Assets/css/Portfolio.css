@@ -18,11 +18,11 @@
 }
 
 #hero {
-  background-color: get-color("tr");
+  background-color: #fafafa;
 }
 
 #why-us {
-  background-color: get-color("tr");
+  background-color: #fafafa;
 }
 
 .cont-feedback {
@@ -68,11 +68,11 @@
 }
 
 #project-showcase {
-  background-color: #F0F0F0;
+  background-color: #140a00;
 }
 
 .text {
-  color: #1C0F00;
+  color: #fafafa;
 }
 
 /*# sourceMappingURL=Portfolio.css.map */
