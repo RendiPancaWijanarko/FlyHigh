@@ -21,7 +21,7 @@ $(document).ready(function(){
         $('#carouselInner').empty();
         for (var i = 0; i < descriptions.length; i++) {
             var activeClass = i === 0 ? ' active' : '';
-            $('#carouselInner').append('<div class="carousel-item' + activeClass + '" data-bs-interval="8000"><img src="' + descriptions[i].image + '" class="d-block mx-auto" width="70%" alt="' + descriptions[i].title + '"></div>');
+            $('#carouselInner').append('<div class="carousel-item' + activeClass + '" data-bs-interval="8000"><img src="' + descriptions[i].image + '" class="d-block mx-auto" width="50%" alt="' + descriptions[i].title + '"></div>');
         }
 
         // Update the text immediately
