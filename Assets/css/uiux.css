@@ -87,5 +87,15 @@ span {
 .pt-5,.pb-5{
     background-color: #fafafa;
 }
+/* Assets/css/uiux.css */
+
+/* ... (kode CSS lainnya) ... */
+
+/* Atur margin agar gambar tetap tersambung di mode tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .feature-content .image-content img {
+        margin-bottom: 0; /* Hapus margin bawah */
+    }
+}
 
 
