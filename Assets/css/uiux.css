@@ -86,3 +86,7 @@ span {
 .feature .image-content img {
     max-width: 100%;
   }
+.img{
+    height: 300px;
+    width: 300px;
+}
