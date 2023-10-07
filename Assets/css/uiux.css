@@ -1,3 +1,7 @@
+body {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
 #abus-header {
     padding-left: 33%;
     padding-right: 33%;
