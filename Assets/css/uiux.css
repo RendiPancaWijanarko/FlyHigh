@@ -87,14 +87,5 @@ span {
 .pt-5,.pb-5{
     background-color: #fafafa;
 }
-@media (max-width: 991.98px) {
-    .lingkaran,
-    .lingkaran2,
-    .persegi-panjang,
-    .persegi-panjang2,
-    .persegi-panjang3,
-    .teks-di-bawah {
-        display: none;
-    }
-}
+
 
