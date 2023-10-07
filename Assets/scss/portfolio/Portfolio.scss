@@ -24,9 +24,15 @@ $txt-color: button.$button-font-color;
   }
 }
 
+
+
 // Portfolio_hero
 #hero {
   background-color: $bg-soft-white;
+}
+
+.btn-collab {
+  max-width: 200px;
 }
 
 // Portfolio_whyus
@@ -85,4 +91,3 @@ $txt-color: button.$button-font-color;
 .text {
   color: get-color('tr');
 }
-

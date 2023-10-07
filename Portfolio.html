@@ -17,6 +17,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <!-- Panggil navbar dengan js -->
@@ -34,9 +36,7 @@
                         <h1 class="fw-bold display-5">Solusi User-Interface <br> dan Journal Anda!</h1>
                         <p class="opacity-50 para-sm">Kami memberikan hasil UI desain terbaik dan kualitas<br>
                             artikel skala internasional sesuai kebutuhan anda.</p>
-                            <a class="btn btn-primary fw-medium d-flex align-items-center text-center justify-content-center w-auto center-button" style="max-width: 200px;" href="https://wa.me/+6285158911396/?text=Halo%2C%20apakah%20bisa%20mengatur%20jadwal%20untuk%20kerja%20sama%3F%20Saya%20tertarik%20dengan%20FlyHigh%20Corp.%20%21" target="blank">
-                                Let's Collaborate
-                              </a>
+                            <a class="btn btn-primary fw-medium d-flex align-items-center text-center justify-content-center w-auto center-button btn-collab" href="https://wa.me/+6285158911396/?text=Halo%2C%20apakah%20bisa%20mengatur%20jadwal%20untuk%20kerja%20sama%3F%20Saya%20tertarik%20dengan%20FlyHigh%20Corp.%20%21" target="blank">Let's Collaborate</a>
                     </div>
                 </div>
                 <img src="Assets/images/Portfolio_Hero.png" alt="hero_section" class="position-absolute end-0 bottom-0 d-none d-lg-block" height="80%">
@@ -53,7 +53,7 @@
                         <h4 class="fw-semibold mt-2 workflow-subtitle">A Clear Process Define The Result</h4>
                     </div>
                 </div>
-                <div class="row pt-5 mt-4 align-items-center">
+                <div class="row pt-5 mt-4 align-items-start">
                     <div class="col-lg-2 offset-lg-1 order-lg-1 col-md-4 order-md-1 col-sm-12 order-sm-1 mb-4 order-lg-1">
                         <div class="business-planning text-center">
                             <div class="icon-bp">
@@ -64,15 +64,15 @@
                         </div>
                     </div>
                     <div class="col-lg-2 d-none d-lg-block col-sm-12 text-center mb-4 order-lg-2">
-                        <div class="business-planning text-center">
-                            <div class="icon-bp">
+                        <div class="py-lg-5 my-lg-5">
+                            <div class="icon-panah1">
                                 <img src="Assets/images/panah-1.png" alt="-->" width="90">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-12 order-lg-2 order-md-2 order-sm-3 mb-4 order-lg-3">
                         <div class="business-planning text-center">
-                            <div class="icon-bp">
+                            <div class="icon-pe">
                                 <img src="Assets/images/project-execution.png" alt="" width="100">
                             </div>
                             <h4 class="fw-semibold wf-title">Project Execution</h4>
@@ -80,15 +80,15 @@
                         </div>
                     </div>
                     <div class="col-lg-2 d-none d-lg-block col-sm-12 text-center mb-4 order-lg-4">
-                        <div class="business-planning text-center">
-                            <div class="icon-bp">
+                        <div class="py-lg-5 my-lg-5">
+                            <div class="icon-panah2">
                                 <img src="Assets/images/panah-2.png" alt="-->" width="90">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 offset-lg-0 order-lg-3 col-md-4 order-md-3 col-sm-12 order-sm-2 mb-4 order-lg-5">
                         <div class="business-planning text-center">
-                            <div class="icon-bp">
+                            <div class="icon-gyp">
                                 <img src="Assets/images/grow-your-business.png" alt="" width="100">
                             </div>
                             <h4 class="fw-semibold wf-title">Grow Your Business</h4>
@@ -99,38 +99,30 @@
             </div>
         </section>
 
-        <!-- Section Project Showcase  !!!BELOM JADI!!! -->
+        <!-- Section Project Showcase  -->
         <section id="project-showcase">
             <div class="container py-5 text">
                 <div class="row text-center">
                     <h1 class="fw-bold display-6">Project Showcase</h1>
                     <h5 class="fw-regular opacity-50 pt-2">Great result should be shared</h5>
                     <div class="pt-3">
-                        <button class="btn btn-primary rounded rounded-pill mx-sm-1 mx-lg-3">UI Design</button>
-                        <button class="btn btn-primary rounded rounded-pill mx-sm-1 mx-lg-3">Artikel</button>
+                        <button class="btn btn-primary rounded rounded-pill mx-sm-1 mx-lg-3" id="uiDesignBtn">UI Design</button>
+                        <button class="btn btn-primary rounded rounded-pill mx-sm-1 mx-lg-3" id="articleBtn">Artikel</button>
                     </div>
                 </div>
         
-                <!-- UI DESIGN -->
+                <!-- Gambar dan Penjelasan -->
                 <div class="row mt-5 align-items-center">
-                    <div class="col-6 offset-lg-1 offset-md-1">
-                        <div class="pt-3">
-                            <h3 class="fw-bold">Judul Penjelas</h3>
-                            <p class="fw-regular opacity-50">Ini adalah penjelas tentang gambar-gambar di samping.</p>
+                    <div class="col-md-6 col-sm-12 offset-lg-1 offset-md-1 order-md-1 order-sm-2">
+                        <div class="pt-3" id="description">
+                            <h3 class="fw-bold" id="title">ASTRA</h3>
+                            <p class="fw-regular opacity-50" id="text">ASTRA merupakan aplikasi berbasis mobile dengan AR (Augmented Reality) untuk melihat seluruh tarian yang ada di Indonesia. UI/UX Design yang kami berikan memiliki niche untuk anak dengan usia yang masih berada di taman kanak-kanak sesuai dengan permintaan client. Kendati demikian, kami berikan opsi light dan dark mode untuk preferensi user dengan harapan tidak hanya anak tk saja,  melainkan seluruh rakyat Indonesia menyukai aplikasi edukatif ini. Project ASTRA berhasil kami kerjakan dan menghasilkan review positif dari client terkait.</p>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-md-5 col-sm-12 order-md-2 order-sm-1">
                         <div id="imagePSCslider" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="2000">
-                                    <img src="Assets/images/astra.png" class="d-block mx-auto" width="50%" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/images/ketika.png" class="d-block mx-auto" width="50%" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Assets/images/paytrash.png" class="d-block mx-auto" width="50%" alt="...">
-                                </div>
+                            <div class="carousel-inner" id="carouselInner">
+                                <!-- input gambar dari js -->
                             </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#imagePSCslider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -281,8 +273,9 @@
         <!-- Panggil footer.html dengan JS -->
         <div id="footer"></div>
 
-        <script src="Assets\js\PanggilNavFoot.js"></script>
-        <script src="Assets\js\KirimFeedbackToWA.js"></script>
+        <script src="Assets/js/PanggilNavFoot.js"></script>
+        <script src="Assets/js/KirimFeedbackToWA.js"></script>
+        <script src="Assets/js/project_showcase.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
