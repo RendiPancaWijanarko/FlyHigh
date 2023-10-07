@@ -80,4 +80,6 @@ span {
 .pt-5,.pb-5{
     background-color: #fafafa;
 }
-
+.section img {
+    max-width: 100%;
+}
