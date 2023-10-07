@@ -1,4 +1,45 @@
 @import 'variables';
 
-$button-color: get-color('pr');
-$button-font-color: get-color('tr');
+// Variabel warna tombol
+$btn-color-primary: get-color('pr');
+$btn-color-secondary: get-color('sc');
+$btn-color-tertiary: get-color('tr');
+
+// Variabel warna teks
+$txt-color-primary: get-color('tr');
+$txt-color-secondary: get-color('tr');
+$txt-color-tertiary: get-color('pr');
+
+@each $btn-type in primary, secondary, tertiary {
+  $btn-color: null;
+  $txt-color: null;
+
+  @if $btn-type == primary {
+    $btn-color: $btn-color-primary;
+    $txt-color: $txt-color-primary;
+  } @else if $btn-type == secondary {
+    $btn-color: $btn-color-secondary;
+    $txt-color: $txt-color-secondary;
+  } @else if $btn-type == tertiary {
+    $btn-color: $btn-color-tertiary;
+    $txt-color: $txt-color-tertiary;
+  }
+
+  .btn-#{$btn-type} {
+    font-weight: 400;
+    font-size: 18px;
+    width: 140px;
+    height: 46px;
+    background-color: $btn-color;
+    color: $txt-color;
+    border: if($btn-type == 'tertiary', 3px solid black, none);
+  
+    &:hover {
+      font-weight: 500;
+      background-color: lighten($btn-color, 10%);
+      border: if($btn-type == 'tertiary', 5px solid black, none);
+    }
+  }
+  
+}
+
