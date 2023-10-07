@@ -293,3 +293,31 @@ span {
     }
     
 }
+/* Inside your existing CSS file */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    #work-flow {
+        padding: 20px;
+    }
+    /* Additional mobile styles for Section 3 */
+    /* ... */
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    #work-flow {
+        padding: 40px;
+    }
+    /* Additional tablet styles for Section 3 */
+    /* ... */
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    #work-flow {
+        padding: 60px;
+    }
+    /* Additional desktop styles for Section 3 */
+    /* ... */
+}
