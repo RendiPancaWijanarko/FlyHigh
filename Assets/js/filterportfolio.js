@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (filter === "all" || filter === itemCategory) {
                     item.style.display = "block";
                 } else {
-                    item.style.display = "none";
+                    item.style.display="none";
                 }
             });
         });
