@@ -37,4 +37,35 @@
   background-color: #fafafa;
 }
 
+.kotak-di-bawah {
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 35px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.card {
+    width: 120px; /* Sesuaikan lebar kartu dengan kebutuhan Anda */
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px; /* Sesuaikan ukuran teks kartu dengan kebutuhan Anda */
+}
+
+.card-img-top {
+    width: 100px; /* Sesuaikan lebar gambar dengan kebutuhan Anda */
+    height: 100px; /* Sesuaikan tinggi gambar dengan kebutuhan Anda */
+    object-fit: cover;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+}
+
 /*# sourceMappingURL=uiux.css.map */
