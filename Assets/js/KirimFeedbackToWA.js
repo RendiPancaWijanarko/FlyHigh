@@ -1,9 +1,3 @@
-// Tambahkan fungsi untuk menutup modal saat tombol "Tutup" ditekan
-document.getElementById("tutupModal").addEventListener("click", function () {
-    const modal = new bootstrap.Modal(document.getElementById("pesanTerkirimModal"));
-    modal.hide();
-});
-
 function kirimPesan() {
     const nama = document.getElementById("nama").value;
     const email = document.getElementById("email").value;
