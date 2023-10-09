@@ -75,8 +75,8 @@ body {
 }
 
 .filter-container {
-  display: flex; /* Menggunakan Flexbox */
-  justify-content: center; /* Mengatur tombol secara horizontal di tengah */
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -87,7 +87,7 @@ body {
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
-  border-radius: 5px; /* Membuat tombol lebih berbentuk */
+  border-radius: 5px;
 }
 .filter-button:hover {
   background-color: #e6e6e6;
@@ -96,8 +96,8 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Menyusun item dari kiri ke kanan */
-  align-items: flex-start; /* Menyusun item dari atas ke bawah */
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .col {
@@ -110,11 +110,10 @@ body {
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
-  /* Efek zoom ketika hover */
 }
 .portfolio-item img {
   max-width: 100%;
-  transition: transform 0.3s; /* Transisi efek zoom */
+  transition: transform 0.3s;
 }
 .portfolio-item h3 {
   margin: 10px 0;
@@ -131,10 +130,9 @@ body {
   background-color: #e6e6e6;
 }
 .portfolio-item:hover img {
-  transform: scale(1.1); /* Memperbesar gambar */
+  transform: scale(1.1);
 }
 
-/* Gaya filter yang aktif */
 .filter-active {
   font-weight: bold;
   text-decoration: underline;
