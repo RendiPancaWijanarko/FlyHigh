@@ -23,18 +23,136 @@ body {
   @extend .testimonial;
 }
 
+.btn-outline-thick {
+  border-width: $border-width;
+  border-color: $border-color;
+  padding: $padding;
+  border-radius: $border-radius;
+  color: $color;
+}
 
-.button {
-  display: inline-block;
-  padding: $padding-small $padding-medium;
-  background-color: $primary-color;
+.btn-outline-thick:hover {
+  @if $border-width == 3px {
+    border-width: 4px;
+  } @else {
+    border-width: $border-width;
+  }
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+  
+}
+
+.container {
+  max-width: 1200px;
+}
+.filter-container {
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: $secondary-color;
   color: white;
   border: none;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px; 
 
   &:hover {
-    background-color: $secondary-color;
+      background-color: darken($primary-color, 10%);
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+}
+
+.portfolio-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+
+  img {
+      max-width: 100%;
+      transition: transform 0.3s; 
+  }
+
+  h3 {
+      margin: 10px 0;
+  }
+
+  a {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: $primary-color;
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+
+      &:hover {
+          background-color: darken($primary-color, 10%);
+      }
+  }
+
+  &:hover {
+      img {
+          transform: scale(1.1); 
+      }
+  }
+}
+
+.filter-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding: 10% 0;
+    
+    .title {
+      h1 {
+        font-size: 24px; // Mengurangi ukuran font pada layar kecil
+      }
+    }
+    
+    .filter-container {
+      flex-direction: column; // Mengubah arah tombol filter menjadi vertikal
+      align-items: center;
+      
+      .filter-button {
+        margin: 5px 0;
+        padding: 8px 16px;
+      }
+    }
+    
+    .portfolio-item {
+      margin-bottom: 20px;
+      
+      img {
+        max-width: 100%;
+      }
+      
+      h3 {
+        font-size: 20px; // Mengurangi ukuran font pada layar kecil
+      }
+      
+      p {
+        font-size: 16px; // Mengurangi ukuran font pada layar kecil
+      }
+    }
   }
 }
