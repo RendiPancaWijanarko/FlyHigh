@@ -1,5 +1,11 @@
-#abus-header {   padding-left: 33%;
-  padding-right: 33%;
+:root {
+    --score: 10; /* Variabel score */
+    --global: 15px; /* Variabel global */
+  }
+
+#abus-header {   
+    padding-left: var(--global);
+    padding-right: var(--global);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +27,7 @@
 /* Tambahkan ini di dalam file CSS Anda */
 .kotak-di-bawah {
   width: 100%; /* Sesuaikan lebar kotak dengan kebutuhan Anda */
-  height: 40%; /* Sesuaikan tinggi kotak dengan kebutuhan Anda */
+  height: var(--score); /* Sesuaikan tinggi kotak dengan kebutuhan Anda */
   background-color: #fafafa; /* Sesuaikan warna latar belakang kotak dengan kebutuhan Anda */
   border-radius: 35px; /* Ini membuat sudut kotak tidak lancip */
   margin-top: 50px; /* Sesuaikan jarak antara kotak dan teks di bawahnya dengan kebutuhan Anda */
@@ -37,7 +43,7 @@
 }
 
 .card {
-    width: 200px;
+    width: var(--global);
     border: none;
     background-color: transparent;
     text-align: center;
