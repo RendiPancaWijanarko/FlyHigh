@@ -1,12 +1,13 @@
 @function calculateScore($value) {
-    @return $value * 2; 
+    @return $value * 2;
 }
-
-// Fungsi untuk menghitung lebar berdasarkan skor
 @function calculateWidth($score) {
-    $base-width: 100px; 
-    @return $base-width + $score * 10px; //
-    
+    $base-width: 100px; // Nilai lebar dasar
+    @return $base-width + $score * 10px;
+}
+@function calculateMarginTop($value) {
+    @return $value * 10px; 
+}
 // styles.scss
 
 #abus-header {
