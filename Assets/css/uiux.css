@@ -46,7 +46,7 @@
 }
 .kotak-di-bawah {
     width: 100%;
-    background-color: #fafafa;
+    background-color: #FFF0E1;
     border-radius: 35px;
     margin-top: 50px;
     display: flex;
@@ -60,5 +60,6 @@
     font-weight: bold;
     font-size: 14px;
 }
+
 /*# sourceMappingURL=uiux.css.map */
 
