@@ -1,11 +1,10 @@
 :root {
-    --score: 10; /* Variabel score */
-    --global: 15px; /* Variabel global */
-  }
-
+    --global: 33%; /* Variabel global untuk padding dan lebar kartu */
+    --score: 40px; /* Variabel untuk tinggi kotak */
+}
 #abus-header {   
-    padding-left: var(--global);
-    padding-right: var(--global);
+  padding-left: var(--global);
+  padding-right: var(--global);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,11 +47,11 @@
     background-color: transparent;
     text-align: center;
     padding: 10px;
-    margin: 20px; /* Menambahkan ruang antara kartu */
+    margin: set-width(3);
 }
 .kotak-di-bawah {
     width: 100%;
-    background-color: #FFF0E1;
+    background-color: #fafafa;
     border-radius: 35px;
     margin-top: 50px;
     display: flex;
@@ -68,4 +67,6 @@
 }
 
 /*# sourceMappingURL=uiux.css.map */
+
+
 

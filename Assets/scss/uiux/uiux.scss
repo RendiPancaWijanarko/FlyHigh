@@ -1,3 +1,10 @@
+$first-width: 5px;
+$second-width: 5px;
+
+@function set-width($n) {
+    @return $n * $first-width + ($n - 1) * $second-width;
+}
+
 // styles.scss
 
 #abus-header {
@@ -12,7 +19,15 @@
 
     // ... (lanjutkan dengan aturan CSS lainnya)
 }
-
+.card {
+    width: var(--global);
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    margin: set-width(3);
+ } 
+    
 .centered-content {
     display: flex;
     flex-direction: column;
