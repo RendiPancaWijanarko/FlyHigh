@@ -1,6 +1,6 @@
 :root {
     --global: 33%; /* Variabel global untuk padding dan lebar kartu */
-    --score: 40px; /* Variabel untuk tinggi kotak */
+    --score: 600px; /* Variabel untuk tinggi kotak */
 }
 #abus-header {   
   padding-left: var(--global);
