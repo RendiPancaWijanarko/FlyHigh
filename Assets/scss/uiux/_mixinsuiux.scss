@@ -1,0 +1,13 @@
+@import 'variables';
+
+#abus-header {
+    width: calc(#{$first-width} + (2 * #{$second-width}));
+    // Aturan gaya lainnya...
+}
+
+.centered-content {
+    margin-top: calc(#{$first-width} + #{$second-width});
+    // Aturan gaya lainnya...
+}
+
+// Aturan gaya lainnya...
