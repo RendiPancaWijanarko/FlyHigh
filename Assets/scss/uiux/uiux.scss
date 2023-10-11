@@ -1,71 +1,24 @@
-:root {
-    --score: 10; /* Variabel score */
-    --global: 15px; /* Variabel global */
-  }
+// styles.scss
 
-#abus-header {   
-    padding-left: var(--global);
-    padding-right: var(--global);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+#abus-header {
+    padding-left: 33%;
+    padding-right: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+    // ... (lanjutkan dengan aturan CSS lainnya)
 }
 
 .centered-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#abus-header h3 {
-  color: #F4841C;
-}
-
-/* Tambahkan ini di dalam file CSS Anda */
-.kotak-di-bawah {
-  width: 100%; /* Sesuaikan lebar kotak dengan kebutuhan Anda */
-  height: var(--score); /* Sesuaikan tinggi kotak dengan kebutuhan Anda */
-  background-color: #fafafa; /* Sesuaikan warna latar belakang kotak dengan kebutuhan Anda */
-  border-radius: 35px; /* Ini membuat sudut kotak tidak lancip */
-  margin-top: 50px; /* Sesuaikan jarak antara kotak dan teks di bawahnya dengan kebutuhan Anda */
-}
-
-.img-uiux-k {
-  padding: 60px;
-  margin-left: 1%;
-}
-
-.pt-5, .pb-5 {
-  background-color: #fafafa;
-}
-
-.card {
-    width: var(--global);
-    border: none;
-    background-color: transparent;
-    text-align: center;
-    padding: 10px;
-    margin: 20px; /* Menambahkan ruang antara kartu */
-}
-.kotak-di-bawah {
-    width: 100%;
-    background-color: #FFF0E1;
-    border-radius: 35px;
-    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    flex-wrap: wrap; /* Memungkinkan kartu untuk pindah ke baris berikutnya saat ruang terbatas */
-}
-.card-title {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 14px;
+
+    // ... (lanjutkan dengan aturan CSS lainnya)
 }
 
-/*# sourceMappingURL=uiux.css.map */
-
+// ... (lanjutkan dengan aturan CSS lainnya)
