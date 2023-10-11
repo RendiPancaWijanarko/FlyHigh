@@ -12,6 +12,21 @@ $second-width: 5px;
 }
 
 // styles.scss
+$primary-color: #F4841C;
+
+#abus-header h1 {
+    @if $primary-color == #F4841C {
+        color: $primary-color;
+    } @else {
+        color: blue;
+    }
+}
+
+@for $i from 1 through 5 {
+    .margin-top-#{$i} {
+        margin-top: $i * 10px;
+    }
+}
 
 #abus-header {
     padding-left: 33%;
