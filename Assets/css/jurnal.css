@@ -1,0 +1,64 @@
+/* Gaya untuk Section 1 - Deskripsi Jasa Pembuatan dan Publikasi Jurnal */
+#jur-header {
+  background-color: #F4841C; 
+  padding: 150px 0 50px 0;
+}
+
+#jur-header h3 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+#jur-header p {
+  font-size: 1.25em;
+}
+
+/* Gaya untuk Section 2 - Pricing */
+#pricing {
+  background-color: #F4841C;
+  padding: 5rem 0;
+}
+
+#pricing h2 {
+  font-weight: bold;
+}
+
+#pricing p {
+  font-size: 1.25em;
+}
+
+/* Gaya untuk Section 3 - Alur Pemesanan melalui WhatsApp */
+#whatsapp-order {
+  padding: 5rem 0;
+}
+
+#whatsapp-order h2 {
+  font-weight: bold;
+}
+
+#whatsapp-order p {
+  font-size: 1.25em;
+}
+
+/* Gaya untuk Section 4 - Portofolio */
+#port-jurnal {
+  background-color: #F4841C;
+  padding: 10rem 0;
+}
+
+#port-jurnal h2 {
+  font-weight: bold;
+}
+
+#port-jurnal .card {
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+/* kustom */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=jurnal.css.map */
