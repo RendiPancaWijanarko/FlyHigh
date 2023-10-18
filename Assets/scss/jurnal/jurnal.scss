@@ -1,5 +1,7 @@
 $primary-color: #F4841C;
 
+$warna: darken(white, 10%);
+
 /* Gaya untuk Section 1 - Deskripsi Jasa Pembuatan dan Publikasi Jurnal */
 #jur-header {
   $primary-color: #ffff;
@@ -29,6 +31,10 @@ $primary-color: #F4841C;
 
 #pricing p {
   font-size: 20px; 
+}
+
+#pricing .card .text-center{
+  background-color: $warna;
 }
 
 /* Gaya untuk Section 3 - Alur Pemesanan melalui WhatsApp */
