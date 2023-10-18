@@ -3,12 +3,12 @@
 }
 
 $primary-color: #F4841C;
-$warna-terang: darken-color($primary-color, 20%);
+$warna-terang: lighten-color($primary-color, 100%);
 
 /* Gaya untuk Section 1 - Deskripsi Jasa Pembuatan dan Publikasi Jurnal */
 #jur-header {
-  $primary-color: #ffff;
-  background-color: $primary-color;
+  $jur-color: #ffff;
+  background-color: $jur-color;
   padding: 150px 0 50px 0;
 }
 
@@ -29,7 +29,8 @@ $warna-terang: darken-color($primary-color, 20%);
 
 #pricing h2 {
   font-weight: bold;
-  font-size: 40px; 
+  font-size: 40px;
+  color: #ffff;
 }
 
 #pricing p {
@@ -62,7 +63,7 @@ $warna-terang: darken-color($primary-color, 20%);
 
 #port-jurnal h2 {
   font-weight: bold;
-  color: white;
+  color: #ffff;
 }
 
 #port-jurnal .card {
