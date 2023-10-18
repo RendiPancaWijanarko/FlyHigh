@@ -1,6 +1,9 @@
-$primary-color: #F4841C;
+@function lighten-color($color, $percentage) {
+  @return lighten($color, $percentage);
+}
 
-$warna: darken(white, 10%);
+$primary-color: #F4841C;
+$warna-terang: darken-color($primary-color, 20%);
 
 /* Gaya untuk Section 1 - Deskripsi Jasa Pembuatan dan Publikasi Jurnal */
 #jur-header {
@@ -33,8 +36,8 @@ $warna: darken(white, 10%);
   font-size: 20px; 
 }
 
-#pricing .card .text-center{
-  background-color: $warna;
+#pricing .card{
+  background-color: lighten-color($primary-color, 20%);
 }
 
 /* Gaya untuk Section 3 - Alur Pemesanan melalui WhatsApp */
