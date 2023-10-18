@@ -1,6 +1,9 @@
+$primary-color: #F4841C;
+
 /* Gaya untuk Section 1 - Deskripsi Jasa Pembuatan dan Publikasi Jurnal */
 #jur-header {
-  background-color: white;
+  $primary-color: #ffff;
+  background-color: $primary-color;
   padding: 150px 0 50px 0;
 }
 
@@ -15,7 +18,7 @@
 
 /* Gaya untuk Section 2 - Pricing */
 #pricing {
-  background-color: #F4841C;
+  background-color: $primary-color;
   padding: 50px 0;
 }
 

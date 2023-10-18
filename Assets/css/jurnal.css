@@ -28,6 +28,7 @@
   font-size: 1.25em;
 }
 
+
 /* Gaya untuk Section 3 - Alur Pemesanan melalui WhatsApp */
 #whatsapp-order {
   padding: 5rem 0;
@@ -44,7 +45,7 @@
 /* Gaya untuk Section 4 - Portofolio */
 #port-jurnal {
   background-color: #F4841C;
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 #port-jurnal h2 {
