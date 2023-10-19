@@ -1,3 +1,5 @@
+@use 'button';
+
 @function lighten-color($color, $percentage) {
   @return lighten($color, $percentage);
 }
@@ -17,9 +19,6 @@ $warna-terang: lighten-color($primary-color, 100%);
   margin-bottom: 1rem;
 }
 
-#jur-header p {
-  font-size: 20px; 
-}
 
 /* Gaya untuk Section 2 - Pricing */
 #pricing {
